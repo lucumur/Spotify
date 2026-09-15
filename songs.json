@@ -1,145 +1,4416 @@
 {
+  "project": "Constelación sonora",
+  "playlist": {
+    "name": "Septiembre 15 2025 HITS",
+    "spotifyId": "0M743ojL83o52L5xr3aDIX",
+    "spotifyUrl": "https://open.spotify.com/playlist/0M743ojL83o52L5xr3aDIX",
+    "capturedOn": "2026-09-15",
+    "totalSongs": 130,
+    "rankedSongs": 50
+  },
   "songs": [
     {
-      "id": "enjoy-the-silence",
-      "title": "Enjoy the Silence",
-      "artist": "Depeche Mode",
-      "album": "Violator",
-      "year": 1990,
-      "genre": "Synthpop",
-      "color": "#bcff3c",
-      "spotifyUrl": "https://open.spotify.com/search/Enjoy%20the%20Silence%20Depeche%20Mode"
+      "id": "track-001",
+      "title": "Andromeda",
+      "artist": "Weyes Blood",
+      "album": "Titanic Rising",
+      "releaseDate": "2019-01-17",
+      "releaseMonthYear": "2019-01",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/54/f6/fc/54f6fc73-6a18-d97a-a634-a4630ec35593/WeyesBlood_TitanicRising_3600.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/andromeda/1450550344?i=1450550346&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Andromeda%20Weyes%20Blood",
+      "playlistPosition": 1,
+      "chartRank": 1,
+      "rankCategories": [
+        "50.1",
+        "10.1",
+        "A.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
     },
     {
-      "id": "blue-monday",
-      "title": "Blue Monday",
-      "artist": "New Order",
-      "album": "Power, Corruption & Lies",
-      "year": 1983,
-      "genre": "New wave",
-      "color": "#5ce1e6",
-      "spotifyUrl": "https://open.spotify.com/search/Blue%20Monday%20New%20Order"
+      "id": "track-002",
+      "title": "PAdMIrARTe",
+      "artist": "BadB & D3llano",
+      "album": "PAdMIrARTe - Single",
+      "releaseDate": "2025-05-16",
+      "releaseMonthYear": "2025-05",
+      "genre": "Amapiano",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/82/0f/89/820f898b-99e5-c865-87b3-1c7cfb956551/5034644641997.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/padmirarte/1810565482?i=1810565485&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/PAdMirARTe%20BadB",
+      "playlistPosition": 2,
+      "chartRank": 2,
+      "rankCategories": [
+        "50.1",
+        "10.1",
+        "A.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 36,
+        "verified": true
+      }
     },
     {
-      "id": "a-forest",
-      "title": "A Forest",
-      "artist": "The Cure",
-      "album": "Seventeen Seconds",
-      "year": 1980,
-      "genre": "Post-punk",
-      "color": "#ff5c8a",
-      "spotifyUrl": "https://open.spotify.com/search/A%20Forest%20The%20Cure"
+      "id": "track-003",
+      "title": "ceilings",
+      "artist": "Lizzy McAlpine",
+      "album": "five seconds flat",
+      "releaseDate": "2020-09-01",
+      "releaseMonthYear": "2020-09",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/11/6a/64/116a64ee-0db3-4e59-bd86-f44008e47f85/5056167170006.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/ceilings/1604657567?i=1604657975&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/ceilings%20Lizzy%20McAlpine",
+      "playlistPosition": 3,
+      "chartRank": 3,
+      "rankCategories": [
+        "50.1",
+        "10.1",
+        "A.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
     },
     {
-      "id": "smalltown-boy",
-      "title": "Smalltown Boy",
-      "artist": "Bronski Beat",
-      "album": "The Age of Consent",
-      "year": 1984,
-      "genre": "Synthpop",
-      "color": "#bcff3c",
-      "spotifyUrl": "https://open.spotify.com/search/Smalltown%20Boy%20Bronski%20Beat"
+      "id": "track-004",
+      "title": "Run the Road",
+      "artist": "Santigold",
+      "album": "I Don't Want: The Gold Fire Sessions",
+      "releaseDate": "2018-07-27",
+      "releaseMonthYear": "2018-07",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/84/23/9b842367-5637-2327-fd95-23a9e7e723ff/5056167108702.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/run-the-road/1669525510?i=1669525512&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Run%20the%20Road%20Santigold",
+      "playlistPosition": 4,
+      "chartRank": 4,
+      "rankCategories": [
+        "50.1",
+        "10.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
     },
     {
-      "id": "west-end-girls",
-      "title": "West End Girls",
-      "artist": "Pet Shop Boys",
-      "album": "Please",
-      "year": 1985,
-      "genre": "Synthpop",
-      "color": "#bcff3c",
-      "spotifyUrl": "https://open.spotify.com/search/West%20End%20Girls%20Pet%20Shop%20Boys"
+      "id": "track-005",
+      "title": "Parfum Quartier",
+      "artist": "Vrax",
+      "album": "Parfum Quartier - Single",
+      "releaseDate": "2026-01-23",
+      "releaseMonthYear": "2026-01",
+      "genre": "Hip-Hop/Rap",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/79/90/c2/7990c22e-a24d-5a51-e1b1-8953cf1b0bdb/Cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/parfum-quartier/1867237089?i=1867237090&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Parfum%20quartier%20Jul",
+      "playlistPosition": 5,
+      "chartRank": 5,
+      "rankCategories": [
+        "50.1",
+        "10.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 28,
+        "verified": true
+      }
     },
     {
-      "id": "sweet-dreams",
-      "title": "Sweet Dreams (Are Made of This)",
-      "artist": "Eurythmics",
-      "album": "Sweet Dreams (Are Made of This)",
-      "year": 1983,
-      "genre": "Synthpop",
-      "color": "#bcff3c",
-      "spotifyUrl": "https://open.spotify.com/search/Sweet%20Dreams%20Eurythmics"
+      "id": "track-006",
+      "title": "Mesmerised",
+      "artist": "Scenic",
+      "album": "Shockwaves - EP",
+      "releaseDate": "2013-09-13",
+      "releaseMonthYear": "2013-09",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/37/82/d7/3782d746-f742-4271-85f8-ce31d79bc03a/3610153668094_Cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/mesmerised/1709025273?i=1709025283&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Mesmerised%20Scenic",
+      "playlistPosition": 6,
+      "chartRank": 6,
+      "rankCategories": [
+        "50.1",
+        "10.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
     },
     {
-      "id": "bizarre-love-triangle",
-      "title": "Bizarre Love Triangle",
-      "artist": "New Order",
-      "album": "Brotherhood",
-      "year": 1986,
-      "genre": "New wave",
-      "color": "#5ce1e6",
-      "spotifyUrl": "https://open.spotify.com/search/Bizarre%20Love%20Triangle%20New%20Order"
+      "id": "track-007",
+      "title": "God from the Machine",
+      "artist": "Santigold",
+      "album": "Master of My Make-Believe",
+      "releaseDate": "2012-04-24",
+      "releaseMonthYear": "2012-04",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/e0/c2/6a/e0c26a80-46f9-58d8-7943-09bdef50ac79/075679963031.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/god-from-the-machine/513472738?i=513472744&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/God%20from%20the%20Machine%20Santigold",
+      "playlistPosition": 7,
+      "chartRank": 7,
+      "rankCategories": [
+        "50.1",
+        "10.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
     },
     {
-      "id": "personal-jesus",
-      "title": "Personal Jesus",
-      "artist": "Depeche Mode",
-      "album": "Violator",
-      "year": 1989,
-      "genre": "Alternative",
-      "color": "#a98bff",
-      "spotifyUrl": "https://open.spotify.com/search/Personal%20Jesus%20Depeche%20Mode"
+      "id": "track-008",
+      "title": "Don't Panic",
+      "artist": "The Harmaleighs",
+      "album": "She Won't Make Sense",
+      "releaseDate": "2019-05-24",
+      "releaseMonthYear": "2019-05",
+      "genre": "Cantautores",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/de/2a/1b/de2a1b64-d94b-463f-1e7e-a611831a4442/067003011662.png/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/dont-panic/1614975513?i=1614975694&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Don't%20Panic%20The%20Harmaleighs",
+      "playlistPosition": 8,
+      "chartRank": 8,
+      "rankCategories": [
+        "50.1",
+        "10.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
     },
     {
-      "id": "fade-to-grey",
-      "title": "Fade to Grey",
-      "artist": "Visage",
-      "album": "Visage",
-      "year": 1980,
-      "genre": "New wave",
-      "color": "#5ce1e6",
-      "spotifyUrl": "https://open.spotify.com/search/Fade%20to%20Grey%20Visage"
+      "id": "track-009",
+      "title": "Happy Now - Only Fire Remix",
+      "artist": "Lykke Li, Only Fire",
+      "album": "Happy Now (Only Fire Remix)",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Happy%20Now%20-%20Only%20Fire%20Remix%20Lykke%20Li",
+      "playlistPosition": 9,
+      "chartRank": 9,
+      "rankCategories": [
+        "50.1",
+        "10.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
     },
     {
-      "id": "true-faith",
-      "title": "True Faith",
-      "artist": "New Order",
-      "album": "Substance",
-      "year": 1987,
-      "genre": "New wave",
-      "color": "#5ce1e6",
-      "spotifyUrl": "https://open.spotify.com/search/True%20Faith%20New%20Order"
+      "id": "track-010",
+      "title": "Univers",
+      "artist": "Ferran Palau",
+      "album": "Kevin",
+      "releaseDate": "2019-09-13",
+      "releaseMonthYear": "2019-09",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/6b/85/04/6b8504b1-17d4-6e09-2c57-179aa43f6ff1/193483978635.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/univers/1473003527?i=1473003601&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Univers%20Ferran%20Palau",
+      "playlistPosition": 10,
+      "chartRank": 10,
+      "rankCategories": [
+        "50.1",
+        "10.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
     },
     {
-      "id": "love-will-tear-us-apart",
-      "title": "Love Will Tear Us Apart",
-      "artist": "Joy Division",
-      "album": "Substance",
-      "year": 1980,
-      "genre": "Post-punk",
-      "color": "#ff5c8a",
-      "spotifyUrl": "https://open.spotify.com/search/Love%20Will%20Tear%20Us%20Apart%20Joy%20Division"
+      "id": "track-011",
+      "title": "Diamond Day",
+      "artist": "Vashti Bunyan",
+      "album": "Just Another Diamond Day",
+      "releaseDate": "1970-12-01",
+      "releaseMonthYear": "1970-12",
+      "genre": "Cantautores",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/cc/4d/6f/cc4d6f76-f692-56de-5f34-afac36ab0641/dj.dlhnfbbs.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/diamond-day/159014334?i=159014338&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Diamond%20Day%20Vashti%20Bunyan",
+      "playlistPosition": 11,
+      "chartRank": 11,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
     },
     {
-      "id": "dont-you-want-me",
-      "title": "Don't You Want Me",
-      "artist": "The Human League",
-      "album": "Dare",
-      "year": 1981,
-      "genre": "Synthpop",
-      "color": "#bcff3c",
-      "spotifyUrl": "https://open.spotify.com/search/Don't%20You%20Want%20Me%20The%20Human%20League"
+      "id": "track-012",
+      "title": "Here I Am",
+      "artist": "The Hellp",
+      "album": "Riviera",
+      "releaseDate": "2025-10-17",
+      "releaseMonthYear": "2025-10",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/c1/b5/00c1b53e-d86d-ca2a-4590-6037b988948b/075679593276.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/here-i-am/1850018237?i=1850018610&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Here%20I%20Am%20The%20Hellp",
+      "playlistPosition": 12,
+      "chartRank": 12,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-013",
+      "title": "Keep It Warm",
+      "artist": "Flo & Eddie",
+      "album": "Moving Targets",
+      "releaseDate": "1976-01-01",
+      "releaseMonthYear": "1976-01",
+      "genre": "Rock",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/e2/db/48/e2db48b0-a91f-3b51-8dc3-b68878f361dc/dj.aozyubfs.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/keep-it-warm/312681856?i=312682071&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Keep%20It%20Warm%20Flo%20%26%20Eddie",
+      "playlistPosition": 13,
+      "chartRank": 13,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-014",
+      "title": "Paia",
+      "artist": "Wild Ones",
+      "album": "Keep It Safe",
+      "releaseDate": "2013-07-09",
+      "releaseMonthYear": "2013-07",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/18/59/9e/18599e24-97d6-ed2a-287a-de05b718e835/888608718684.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/paia/1239523976?i=1239523986&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Paia%20Wild%20Ones",
+      "playlistPosition": 14,
+      "chartRank": 14,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-015",
+      "title": "AURA",
+      "artist": "Ogryzek",
+      "album": "AURA - Single",
+      "releaseDate": "2024-07-12",
+      "releaseMonthYear": "2024-07",
+      "genre": "Electrónica",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/78/48/0c/78480cc7-d055-9969-a5b1-d8013327afd4/0197342680257.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/aura/1845331112?i=1845331123&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/AURA%20Ogryzek",
+      "playlistPosition": 15,
+      "chartRank": 15,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-016",
+      "title": "Morning Sunshine",
+      "artist": "The Idle Race",
+      "album": "The Birthday Party",
+      "releaseDate": "1968-01-01",
+      "releaseMonthYear": "1968-01",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/1c/c7/d6/1cc7d6d2-dde8-a2d8-1407-481bfa2d9902/825646489398.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/morning-sunshine/1073025041?i=1073025048&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Morning%20Sunshine%20The%20Idle%20Race",
+      "playlistPosition": 16,
+      "chartRank": 16,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-017",
+      "title": "Que tinguem sort",
+      "artist": "Lluis Llach",
+      "album": "I si canto trist",
+      "releaseDate": "1974-01-01",
+      "releaseMonthYear": "1974-01",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features6/v4/dc/e5/40/dce5405a-a97b-e1c8-845a-82873f4614b9/dj.ushuwfdx.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/que-tinguem-sort/128116027?i=128115551&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Que%20tinguem%20sort%20Llu%C3%ADs%20Llach",
+      "playlistPosition": 17,
+      "chartRank": 17,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-018",
+      "title": "Get Well Soon",
+      "artist": "Taylor Vick",
+      "album": "Free Company",
+      "releaseDate": "2019-06-24",
+      "releaseMonthYear": "2019-06",
+      "genre": "Rock indie",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8d/8b/c1/8d8bc1de-45f1-2da9-d96d-c2f3ff13a51f/0045778771202.png/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/get-well-soon/1485075076?i=1485075078&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Get%20Well%20Soon%20Taylor%20Vick",
+      "playlistPosition": 18,
+      "chartRank": 18,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-019",
+      "title": "ZAHARA",
+      "artist": "Judeline",
+      "album": "TÁNGER Y ZAHARA - Single",
+      "releaseDate": "2022-12-15",
+      "releaseMonthYear": "2022-12",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ee/63/3b/ee633b4c-da05-a2c8-b6d0-19d1747f0f3a/197187510894.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/zahara/1656287249?i=1656287260&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/ZAHARA%20Judeline",
+      "playlistPosition": 19,
+      "chartRank": 19,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-020",
+      "title": "WORTH NOTHING (feat. Oliver Tree)",
+      "artist": "TWISTED",
+      "album": "WORTH NOTHING (Fast & Furious: Drift Tape/Phonk Vol. 1) [feat. Oliver Tree] - EP",
+      "releaseDate": "2022-09-28",
+      "releaseMonthYear": "2022-09",
+      "genre": "Electrónica",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8c/ae/cd/8caecdb9-56e0-44cb-da65-71558dc68156/23UMGIM08992.rgb.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/worth-nothing-feat-oliver-tree/1669609014?i=1669609021&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/WORTH%20NOTHING%20(feat.%20Oliver%20Tree)%20TWISTED",
+      "playlistPosition": 20,
+      "chartRank": 20,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 39,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-021",
+      "title": "Can We Still Be Friends? (2006 Remaster)",
+      "artist": "Todd Rundgren",
+      "album": "Digital Dozen",
+      "releaseDate": "1978-04-01",
+      "releaseMonthYear": "1978-04",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/f7/08/0ff70835-37c3-1fe4-9d52-d05a2177bcdb/603497811984.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/can-we-still-be-friends-2006-remaster/1820924612?i=1820924904&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Can%20We%20Still%20Be%20Friends%3F%20-%202015%20Remaster%20Todd%20Rundgren",
+      "playlistPosition": 21,
+      "chartRank": 21,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 24,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-022",
+      "title": "Lovewave",
+      "artist": "The 1-800",
+      "album": "Lovewave",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Lovewave%20The%201-800",
+      "playlistPosition": 22,
+      "chartRank": 22,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-023",
+      "title": "Saí para ver o mar",
+      "artist": "Marina Sena & Rachel Reis",
+      "album": "Saí para ver o mar - Single",
+      "releaseDate": "2025-12-17",
+      "releaseMonthYear": "2025-12",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/27/d5/82/27d58241-0d3e-799a-9982-f5a95f91a6b7/196873936468.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/sa%C3%AD-para-ver-o-mar/1860021068?i=1860021075&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Sai%20para%20ver%20o%20mar%20Marina%20Sena",
+      "playlistPosition": 23,
+      "chartRank": 23,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 36,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-024",
+      "title": "Ses yeux",
+      "artist": "Asfar Shamsi",
+      "album": "ciuicui",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Ses%20yeux%20Asfar%20Shamsi",
+      "playlistPosition": 24,
+      "chartRank": 24,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-025",
+      "title": "Ordinary Boy (The Cinematic Orchestra Remix)",
+      "artist": "Ultraísta",
+      "album": "Ordinary Boy (The Remixes)",
+      "releaseDate": "2012-01-01",
+      "releaseMonthYear": "2012-01",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3c/96/90/3c9690f6-3995-76e8-ff1b-f7a06967e93e/720841126508_Cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/ordinary-boy-the-cinematic-orchestra-remix/1531418000?i=1531418003&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Ordinary%20Boy%20-%20The%20Cinematic%20Orchestra%20Remix%20Ultra%C3%ADsta",
+      "playlistPosition": 25,
+      "chartRank": 25,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-026",
+      "title": "AMNESIA",
+      "artist": "TIF",
+      "album": "1.6",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/AMNESIA%20TIF",
+      "playlistPosition": 26,
+      "chartRank": 26,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-027",
+      "title": "Grey Veils",
+      "artist": "Chainless",
+      "album": "Grey Veils",
+      "releaseDate": "2014-03-31",
+      "releaseMonthYear": "2014-03",
+      "genre": "Electrónica",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/78/f6/1d/78f61d53-be35-0973-9748-70f134bbc5fc/8718723085991.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/grey-veils/1221579697?i=1221580399&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Grey%20Veils%20Chainless",
+      "playlistPosition": 27,
+      "chartRank": 27,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-028",
+      "title": "Mona Lisa's Smile",
+      "artist": "Molly Nilsson",
+      "album": "Imaginations",
+      "releaseDate": "2017-05-22",
+      "releaseMonthYear": "2017-05",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a2/e6/63/a2e663d1-5a7e-f44b-24a4-3d6d2df9bd70/859720249387_cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/mona-lisas-smile/1238798615?i=1238798619&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Mona%20Lisa's%20Smile%20Molly%20Nilsson",
+      "playlistPosition": 28,
+      "chartRank": 28,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-029",
+      "title": "aquatic ambience",
+      "artist": "Scizzie",
+      "album": "aquatic ambience - Single",
+      "releaseDate": "2022-10-15",
+      "releaseMonthYear": "2022-10",
+      "genre": "Hip-hop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bf/31/59/bf3159e0-29a2-24cb-6900-8e5dc8f0b4dc/1963620999187.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/aquatic-ambience/1784339085?i=1784339361&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/aquatic%20ambience%20Scizzie",
+      "playlistPosition": 29,
+      "chartRank": 29,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-030",
+      "title": "Young Girl",
+      "artist": "Gary Puckett & The Union Gap",
+      "album": "Gary Puckett & The Union Gap Featuring \"Young Girl\"",
+      "releaseDate": "1968-01-01",
+      "releaseMonthYear": "1968-01",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/e6/f4/4f/e6f44f38-f634-9db3-5782-851d560ed944/886444374996.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/young-girl/795436913?i=795436923&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Young%20Girl%20Gary%20Puckett%20%26%20The%20Union%20Gap",
+      "playlistPosition": 30,
+      "chartRank": 30,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-031",
+      "title": "Gently Tender - 2010 Remaster",
+      "artist": "The Incredible String Band",
+      "album": "The 5000 Spirits or the Layers of the Onion",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Gently%20Tender%20-%202010%20Remaster%20The%20Incredible%20String%20Band",
+      "playlistPosition": 31,
+      "chartRank": 31,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-032",
+      "title": "Mrs. Robinson (From \"The Graduate\" Soundtrack)",
+      "artist": "Simon & Garfunkel",
+      "album": "The Best of Simon & Garfunkel",
+      "releaseDate": "1968-04-03",
+      "releaseMonthYear": "1968-04",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/03/30/2f/03302f7a-3bba-084a-3ed9-c9ac018fadfd/886447698341.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/mrs-robinson-from-the-graduate-soundtrack/1463651590?i=1463652181&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Mrs.%20Robinson%20-%20From%20The%20Graduate%20Soundtrack%20Simon%20%26%20Garfunkel",
+      "playlistPosition": 32,
+      "chartRank": 32,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 36,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-033",
+      "title": "OI KAIROI ALLAZOUNE",
+      "artist": "Saske",
+      "album": "I TRIED",
+      "releaseDate": "2026-08-07",
+      "releaseMonthYear": "2026-08",
+      "genre": "Rap",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0b/55/29/0b5529e1-f3bd-9330-b639-513d77676aad/885288164961.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/oi-kairoi-allazoune/6797912135?i=6797912380&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/OI%20KAIROI%20ALLAZOUNE%20Saske",
+      "playlistPosition": 33,
+      "chartRank": 33,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-034",
+      "title": "Cantiga de Montse",
+      "artist": "Guillem Gisbert",
+      "album": "Balla la masurca!",
+      "releaseDate": "2024-01-26",
+      "releaseMonthYear": "2024-01",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8f/fa/5a/8ffa5a59-438a-22f2-4f27-76762410ebe3/197190413298.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/cantiga-de-montse/1727694358?i=1727694559&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Cantiga%20de%20Montse%20Guillem%20Gisbert",
+      "playlistPosition": 34,
+      "chartRank": 34,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-035",
+      "title": "Alfie",
+      "artist": "Dionne Warwick",
+      "album": "Here Where There Is Love",
+      "releaseDate": "1966-12-04",
+      "releaseMonthYear": "1966-12",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m01/d19/h04/s06.ktftsmzc.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/alfie/41688473?i=41688485&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Alfie%20Dionne%20Warwick",
+      "playlistPosition": 35,
+      "chartRank": 35,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-036",
+      "title": "Tu Gato Bellaco",
+      "artist": "MILO MAE",
+      "album": "Tu Gato Bellaco - Single",
+      "releaseDate": "2020-03-03",
+      "releaseMonthYear": "2020-03",
+      "genre": "Urbano latino",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/08/7a/80087a39-39df-60f0-1b3f-58a9952dab3e/00602455059383_Cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/tu-gato-bellaco/1778677034?i=1778677345&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Tu%20Gato%20Bellaco%20Milo%20Mae",
+      "playlistPosition": 36,
+      "chartRank": 36,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-037",
+      "title": "Impi",
+      "artist": "Johnny Clegg",
+      "album": "Heart of the Dancer",
+      "releaseDate": "2006-05-02",
+      "releaseMonthYear": "2006-05",
+      "genre": "Músicas del mundo",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b0/8f/68/b08f68c8-988c-9ebe-9414-d1102c077603/880359002128_cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/impi/1616169162?i=1616169175&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Impi%20Johnny%20Clegg",
+      "playlistPosition": 37,
+      "chartRank": 37,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 36,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-038",
+      "title": "Both Sides Now",
+      "artist": "Judy Collins",
+      "album": "Wildflowers",
+      "releaseDate": "1967-10-01",
+      "releaseMonthYear": "1967-10",
+      "genre": "Cantautores",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f9/fb/47/f9fb477f-7915-632f-0db5-82deb676bc7b/603497994908.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/both-sides-now/256609835?i=256611072&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Both%20Sides%20Now%20Judy%20Collins",
+      "playlistPosition": 38,
+      "chartRank": 38,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-039",
+      "title": "Piloto",
+      "artist": "Flora Matos",
+      "album": "Piloto - Single",
+      "releaseDate": "2018-06-12",
+      "releaseMonthYear": "2018-06",
+      "genre": "Hip-Hop/Rap",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a0/18/81/a0188182-b032-0e72-40b4-28d4f4b60d52/0.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/piloto/1396197118?i=1396197119&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Piloto%20Flora%20Matos",
+      "playlistPosition": 39,
+      "chartRank": 39,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-040",
+      "title": "Beggin'",
+      "artist": "Måneskin",
+      "album": "Chosen",
+      "releaseDate": "2017-12-08",
+      "releaseMonthYear": "2017-12",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/67/08/e0/6708e014-c1be-76b1-c520-a6567bf946a2/886446867755.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/beggin/1320780883?i=1320781379&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Beggin'%20M%C3%A5neskin",
+      "playlistPosition": 40,
+      "chartRank": 40,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-041",
+      "title": "Peaches",
+      "artist": "In The Valley Below",
+      "album": "The Belt",
+      "releaseDate": "2013-01-01",
+      "releaseMonthYear": "2013-01",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/b9/6f/28b96f6d-9dd0-2196-2ac1-c1f58755d9c7/859712849434_cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/peaches/899621684?i=899621688&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Peaches%20In%20The%20Valley%20Below",
+      "playlistPosition": 41,
+      "chartRank": 41,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-042",
+      "title": "CANIJO",
+      "artist": "Judeline",
+      "album": "CANIJO - Single",
+      "releaseDate": "2023-06-15",
+      "releaseMonthYear": "2023-06",
+      "genre": "Música latina",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/06/22/e9/0622e916-ce72-2cc6-928c-7d490bb450a3/196922504464_Cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/canijo/1690867240?i=1690867461&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/CANIJO%20Judeline",
+      "playlistPosition": 42,
+      "chartRank": 42,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-043",
+      "title": "Enero en la Playa",
+      "artist": "Delafé y las Flores Azules",
+      "album": "Facto Delafe y las Flores Azules Vs. El Monstruo de las Ramblas",
+      "releaseDate": "2007-07-10",
+      "releaseMonthYear": "2007-07",
+      "genre": "Pop en español",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/83/c8/a7/mzi.mkyrpnmb.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/enero-en-la-playa/258893912?i=258893931&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Enero%20en%20la%20playa%20Facto%20Delaf%C3%A9%20y%20las%20flores%20azules",
+      "playlistPosition": 43,
+      "chartRank": 43,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 36,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-044",
+      "title": "Six Forty Seven",
+      "artist": "Instupendo",
+      "album": "Six Forty Seven - Single",
+      "releaseDate": "2016-03-28",
+      "releaseMonthYear": "2016-03",
+      "genre": "Downtempo",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/52/5d/25525df5-726d-8298-d1bb-9d1a59291919/198622820417_cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/six-forty-seven/1772190966?i=1772190967&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Six%20Forty%20Seven%20Instupendo",
+      "playlistPosition": 44,
+      "chartRank": 44,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-045",
+      "title": "لي مهجور",
+      "artist": "عزيز مرقة",
+      "album": "الحلقة الشرقية",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/%D9%84%D9%8A%20%D9%85%D9%87%D8%AC%D9%88%D8%B1%20%D8%B9%D8%B2%D9%8A%D8%B2%20%D9%85%D8%B1%D9%82%D8%A9",
+      "playlistPosition": 45,
+      "chartRank": 45,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-046",
+      "title": "The Big Idea",
+      "artist": "Black Books",
+      "album": "Black Books",
+      "releaseDate": "2011-02-15",
+      "releaseMonthYear": "2011-02",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/99/a6/60/99a660fe-e1fc-068d-e4fe-ad451f3029f1/cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/the-big-idea/1525200292?i=1525200459&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/The%20Big%20Idea%20Black%20Books",
+      "playlistPosition": 46,
+      "chartRank": 46,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-047",
+      "title": "PARISIENNE",
+      "artist": "GIMS & La Mano 1.9",
+      "album": "LE NORD SE SOUVIENT : L'ODYSSÉE",
+      "releaseDate": "2025-02-20",
+      "releaseMonthYear": "2025-02",
+      "genre": "Hip-Hop/Rap",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a6/fc/3d/a6fc3d50-17df-5a0d-6ee3-2ebd49ca2209/cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/parisienne/1834158097?i=1834158098&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/PARISIENNE%20GIMS",
+      "playlistPosition": 47,
+      "chartRank": 47,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 36,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-048",
+      "title": "Habits (Stay High)",
+      "artist": "Tove Lo",
+      "album": "Queen of the Clouds",
+      "releaseDate": "2013-03-03",
+      "releaseMonthYear": "2013-03",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ad/17/77/ad177799-79d3-6065-e587-87a889ccf72a/14UMGIM36051.rgb.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/habits-stay-high/1440820593?i=1440820811&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Habits%20(Stay%20High)%20Tove%20Lo",
+      "playlistPosition": 48,
+      "chartRank": 48,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-049",
+      "title": "Sexy Sadie",
+      "artist": "The Beatles",
+      "album": "The Beatles (The White Album)",
+      "releaseDate": "1968-11-22",
+      "releaseMonthYear": "1968-11",
+      "genre": "Rock",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fa/5b/89/fa5b898d-bad6-e053-4195-260e5c74f2bb/00602567725466.rgb.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/sexy-sadie/1441133180?i=1441134198&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Sexy%20Sadie%20-%20Remastered%202009%20The%20Beatles",
+      "playlistPosition": 49,
+      "chartRank": 49,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 30.3,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-050",
+      "title": "down with the snow",
+      "artist": "campthehills",
+      "album": "down with the snow - Single",
+      "releaseDate": "2026-06-19",
+      "releaseMonthYear": "2026-06",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/71/fb/d6/71fbd641-1ca8-4242-beeb-2b705055f80f/612891076547.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/down-with-the-snow/6778892976?i=6778892977&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/down%20with%20the%20snow%20campthehills",
+      "playlistPosition": 50,
+      "chartRank": 50,
+      "rankCategories": [
+        "50.1"
+      ],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-051",
+      "title": "Halah",
+      "artist": "Mazzy Star",
+      "album": "She Hangs Brightly",
+      "releaseDate": "1990-01-01",
+      "releaseMonthYear": "1990-01",
+      "genre": "Rock",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ff/7a/e0/ff7ae040-2a0c-c2b6-e9b2-320eba204491/00077779650859.rgb.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/halah/724675215?i=724675638&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Halah%20Mazzy%20Star",
+      "playlistPosition": 51,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-052",
+      "title": "Be Free",
+      "artist": "Weyes Blood",
+      "album": "Front Row Seat to Earth",
+      "releaseDate": "2016-10-21",
+      "releaseMonthYear": "2016-10",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ab/62/cb/ab62cb5d-af61-f50f-9511-edac59ed824c/184923122855_cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/be-free/1775764352?i=1775764368&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Be%20Free%20Weyes%20Blood",
+      "playlistPosition": 52,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-053",
+      "title": "Panpin bat bezala",
+      "artist": "Jimena Amarillo, Hofe",
+      "album": "Panpin bat bezala",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Panpin%20bat%20bezala%20Jimena%20Amarillo",
+      "playlistPosition": 53,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-054",
+      "title": "Precariedade Emocional",
+      "artist": "bratzantifa",
+      "album": "Precariedade Emocional - Single",
+      "releaseDate": "2023-03-24",
+      "releaseMonthYear": "2023-03",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/66/33/1e/66331e98-2bd3-3660-8928-b038065db37f/7321170627174.png/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/precariedade-emocional/1677343350?i=1677343353&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/precariedade%20emocional%20bratzantifa",
+      "playlistPosition": 54,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-055",
+      "title": "Sin pena ni gloria",
+      "artist": "Gara Durán",
+      "album": "ALKIMIA - EP",
+      "releaseDate": "2025-06-26",
+      "releaseMonthYear": "2025-06",
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5b/8f/d5/5b8fd5f8-b2a4-71ac-4e49-20a6dd4dedf3/25UMGIM60242.rgb.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/sin-pena-ni-gloria/1818393625?i=1818393630&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Sin%20pena%20ni%20gloria%20Gara%20Dur%C3%A1n",
+      "playlistPosition": 55,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-056",
+      "title": "Buzzcut Season",
+      "artist": "Lorde",
+      "album": "Pure Heroine",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Buzzcut%20Season%20Lorde",
+      "playlistPosition": 56,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-057",
+      "title": "Weathervane",
+      "artist": "Hunter Metts",
+      "album": "Weathervane",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Weathervane%20Hunter%20Metts",
+      "playlistPosition": 57,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-058",
+      "title": "freedom",
+      "artist": "campthehills",
+      "album": "freedom - Single",
+      "releaseDate": "2025-09-26",
+      "releaseMonthYear": "2025-09",
+      "genre": "Dance",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/0b/60/cd0b60ec-88db-75df-134e-33dacbe53c98/663918517758.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/freedom/1839328590?i=1839328591&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/freedom%20campthehills",
+      "playlistPosition": 58,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-059",
+      "title": "if I could I would",
+      "artist": "Tove Lo",
+      "album": "ESTRUS",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": "Pop",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/ee/b1/e2eeb1c6-a96a-d768-643c-20e087bce6d8/00823375156413_Cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/if-i-could-i-would/6766440172?i=6766440189&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/I'm%20your%20girl%20right%3F%20Tove%20Lo",
+      "playlistPosition": 59,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 18,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-060",
+      "title": "Je suis resté le même",
+      "artist": "Jul",
+      "album": "Je ne me vois pas briller",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Je%20suis%20rest%C3%A9%20le%20m%C3%AAme%20Jul",
+      "playlistPosition": 60,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-061",
+      "title": "Validée",
+      "artist": "Booba, Benash",
+      "album": "Nero nemesis",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Valid%C3%A9e%20Booba",
+      "playlistPosition": 61,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-062",
+      "title": "Pathos y Lagrimas",
+      "artist": "Mood Rings",
+      "album": "VPI Harmony",
+      "releaseDate": "2013-04-22",
+      "releaseMonthYear": "2013-04",
+      "genre": "Alternativa",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/35/64/82356437-dbe1-851b-00e6-ae6f4c1ed96f/184923114669_cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/pathos-y-lagrimas/1775760844?i=1775760848&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Pathos%20y%20Lagrimas%20Mood%20Rings",
+      "playlistPosition": 62,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-063",
+      "title": "You and I",
+      "artist": "Caribou",
+      "album": "Suddenly",
+      "releaseDate": "2019-12-04",
+      "releaseMonthYear": "2019-12",
+      "genre": "Dance",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c3/61/91/c3619133-39de-e035-703d-f331f2f4da2d/56842.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/you-and-i/1839112059?i=1839112061&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/You%20and%20I%20Caribou",
+      "playlistPosition": 63,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 42,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-064",
+      "title": "Angel Of The Morning",
+      "artist": "Juice Newton",
+      "album": "Juice",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Angel%20Of%20The%20Morning%20Juice%20Newton",
+      "playlistPosition": 64,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-065",
+      "title": "The Barrel",
+      "artist": "Aldous Harding",
+      "album": "Designer",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/The%20Barrel%20Aldous%20Harding",
+      "playlistPosition": 65,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-066",
+      "title": "DARE (feat. Shaun Ryder & Roses Gabor)",
+      "artist": "Gorillaz, Shaun Ryder, Roses Gabor",
+      "album": "Demon Days",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/DARE%20(feat.%20Shaun%20Ryder%20%26%20Roses%20Gabor)%20Gorillaz",
+      "playlistPosition": 66,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-067",
+      "title": "Candy",
+      "artist": "Plan B",
+      "album": "Candy",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Candy%20Plan%20B",
+      "playlistPosition": 67,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-068",
+      "title": "TOMMY & PAMELA",
+      "artist": "NO FEELS",
+      "album": "TOMMY & PAMELA - Single",
+      "releaseDate": "2024-09-13",
+      "releaseMonthYear": "2024-09",
+      "genre": "House",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/de/3d/04/de3d0489-fe5a-9b2d-8db2-a12d39cc2ad9/artwork.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/tommy-pamela/1767652049?i=1767652050&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/TOMMY%20%26%20PAMELA%20Peso%20Pluma",
+      "playlistPosition": 68,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 24,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-069",
+      "title": "Xenitemena mou poulia",
+      "artist": "Alkyone",
+      "album": "Xenitemena mou poulia",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Xenitemena%20mou%20poulia%20Alkyone",
+      "playlistPosition": 69,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-070",
+      "title": "Carol of the Bells (From Home Alone)",
+      "artist": "John Williams",
+      "album": "Home Alone (Original Motion Picture Soundtrack)",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Carol%20of%20the%20Bells%20(From%20Home%20Alone)%20John%20Williams",
+      "playlistPosition": 70,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-071",
+      "title": "1-2-3",
+      "artist": "Miami Sound Machine",
+      "album": "Let It Loose",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/1-2-3%20Miami%20Sound%20Machine",
+      "playlistPosition": 71,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-072",
+      "title": "Need to Know",
+      "artist": "Doja Cat",
+      "album": "Planet Her",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Need%20to%20Know%20Doja%20Cat",
+      "playlistPosition": 72,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-073",
+      "title": "De Mí Enamórate",
+      "artist": "Daniela Romo",
+      "album": "Mujer De Todos, Mujer De Nadie",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/De%20M%C3%AD%20Enam%C3%B3rate%20Daniela%20Romo",
+      "playlistPosition": 73,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-074",
+      "title": "Rosanna",
+      "artist": "TOTO",
+      "album": "Toto IV",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Rosanna%20TOTO",
+      "playlistPosition": 74,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-075",
+      "title": "Baby Blue",
+      "artist": "The Chocolate Watchband",
+      "album": "Inner Mystique",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Baby%20Blue%20The%20Chocolate%20Watchband",
+      "playlistPosition": 75,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-076",
+      "title": "LALA",
+      "artist": "Myke Towers",
+      "album": "LA VIDA ES UNA",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/LALA%20Myke%20Towers",
+      "playlistPosition": 76,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-077",
+      "title": "Seasons Come, Seasons Go",
+      "artist": "Bobbie Gentry",
+      "album": "Touch 'Em With Love",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Seasons%20Come%2C%20Seasons%20Go%20Bobbie%20Gentry",
+      "playlistPosition": 77,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-078",
+      "title": "Safira",
+      "artist": "Kazzio",
+      "album": "Safira",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Safira%20Kazzio",
+      "playlistPosition": 78,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-079",
+      "title": "Le cœur des filles",
+      "artist": "A2H",
+      "album": "Rédemption",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Le%20c%C5%93ur%20des%20filles%20A2H",
+      "playlistPosition": 79,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-080",
+      "title": "E. Signaler",
+      "artist": "Damso",
+      "album": "Ipséité",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/E.%20Signaler%20Damso",
+      "playlistPosition": 80,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-081",
+      "title": "Malaquita",
+      "artist": "Gara Durán",
+      "album": "Malaquita",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Malaquita%20Gara%20Dur%C3%A1n",
+      "playlistPosition": 81,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-082",
+      "title": "Hopeless",
+      "artist": "Psychic Twin",
+      "album": "Strange Diary",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Hopeless%20Psychic%20Twin",
+      "playlistPosition": 82,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-083",
+      "title": "Dois",
+      "artist": "Reïna",
+      "album": "Arts Martials",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Dois%20Re%C3%AFna",
+      "playlistPosition": 83,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-084",
+      "title": "Dreamcore",
+      "artist": "MEWYI",
+      "album": "Dreamcore (Nostalgia)",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Dreamcore%20MEWYI",
+      "playlistPosition": 84,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-085",
+      "title": "Six Forty Seven",
+      "artist": "Instupendo",
+      "album": "Six Forty Seven - Single",
+      "releaseDate": "2016-03-28",
+      "releaseMonthYear": "2016-03",
+      "genre": "Downtempo",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/52/5d/25525df5-726d-8298-d1bb-9d1a59291919/198622820417_cover.jpg/600x600bb.jpg",
+      "appleUrl": "https://music.apple.com/mx/album/six-forty-seven/1772190966?i=1772190967&uo=4",
+      "spotifyUrl": "https://open.spotify.com/search/Six%20Forty%20Seven%20Instupendo",
+      "playlistPosition": 85,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Apple Search API",
+        "confidence": 40,
+        "verified": true
+      }
+    },
+    {
+      "id": "track-086",
+      "title": "Miel",
+      "artist": "Lauri Garcia",
+      "album": "Miel",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Miel%20Lauri%20Garcia",
+      "playlistPosition": 86,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-087",
+      "title": "Sin Tanto Royo",
+      "artist": "Luis R Conriquez, Tito Double P",
+      "album": "Corridos Bélicos, Vol. IV",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Sin%20Tanto%20Royo%20Luis%20R%20Conriquez",
+      "playlistPosition": 87,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-088",
+      "title": "Imagine",
+      "artist": "Carbonne",
+      "album": "Imagine",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Imagine%20Carbonne",
+      "playlistPosition": 88,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-089",
+      "title": "rompeolas",
+      "artist": "Martín",
+      "album": "rompeolas",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/rompeolas%20Mart%C3%ADn",
+      "playlistPosition": 89,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-090",
+      "title": "Ewa Safi",
+      "artist": "Noano, Lil Klieme",
+      "album": "Ewa Safi",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Ewa%20Safi%20Noano",
+      "playlistPosition": 90,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-091",
+      "title": "Angel",
+      "artist": "NewDad",
+      "album": "MADRA",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Angel%20NewDad",
+      "playlistPosition": 91,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-092",
+      "title": "Only You Know",
+      "artist": "Cornelia Murr",
+      "album": "Corridor",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Only%20You%20Know%20Cornelia%20Murr",
+      "playlistPosition": 92,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-093",
+      "title": "Yo quiero un affaire",
+      "artist": "Jimena Amarillo",
+      "album": "Yo quiero un affaire",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Yo%20quiero%20un%20affaire%20Jimena%20Amarillo",
+      "playlistPosition": 93,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-094",
+      "title": "Vida Nueva",
+      "artist": "pablopablo",
+      "album": "Canciones en Mí",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Vida%20Nueva%20pablopablo",
+      "playlistPosition": 94,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-095",
+      "title": "Ens vam esfum. (abrv.)",
+      "artist": "miquel",
+      "album": "I-I",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Ens%20vam%20esfum.%20(abrv.)%20miquel",
+      "playlistPosition": 95,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-096",
+      "title": "Scrawny",
+      "artist": "Wallows",
+      "album": "Nothing Happens",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Scrawny%20Wallows",
+      "playlistPosition": 96,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-097",
+      "title": "River Dreams",
+      "artist": "Beverly Glenn-Copeland",
+      "album": "Transmissions: The Music of Beverly Glenn-Copeland",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/River%20Dreams%20Beverly%20Glenn-Copeland",
+      "playlistPosition": 97,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-098",
+      "title": "Something on Your Mind",
+      "artist": "Karen Dalton",
+      "album": "In My Own Time (50th Anniversary Edition)",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Something%20on%20Your%20Mind%20Karen%20Dalton",
+      "playlistPosition": 98,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-099",
+      "title": "DEMENCIA",
+      "artist": "Junior H, Gael Valenzuela",
+      "album": "DEPR:/$$$ED MFKZ",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/DEMENCIA%20Junior%20H",
+      "playlistPosition": 99,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-100",
+      "title": "FREESTYLE",
+      "artist": "Hermanos Espinoza",
+      "album": "LINAJE",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/FREESTYLE%20Hermanos%20Espinoza",
+      "playlistPosition": 100,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-101",
+      "title": "What Once Was",
+      "artist": "Her's",
+      "album": "Songs of Her's",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/What%20Once%20Was%20Her's",
+      "playlistPosition": 101,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-102",
+      "title": "Under Your Spell",
+      "artist": "Desire",
+      "album": "Desire",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Under%20Your%20Spell%20Desire",
+      "playlistPosition": 102,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-103",
+      "title": "De Lejitos - Remix",
+      "artist": "Jay Wheeler, Omy de Oro",
+      "album": "La Voz Favorita",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/De%20Lejitos%20-%20Remix%20Jay%20Wheeler",
+      "playlistPosition": 103,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-104",
+      "title": "Puñaladas",
+      "artist": "Lauta, Amigo de Artistas, Tote",
+      "album": "Yo Solo Quería Divertirme",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Pu%C3%B1aladas%20Lauta",
+      "playlistPosition": 104,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-105",
+      "title": "Von hier an blind",
+      "artist": "Wir sind Helden",
+      "album": "Von hier an blind",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Von%20hier%20an%20blind%20Wir%20sind%20Helden",
+      "playlistPosition": 105,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-106",
+      "title": "Inundauswendig",
+      "artist": "makko, The Chainsmokers",
+      "album": "Inundauswendig",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Inundauswendig%20makko",
+      "playlistPosition": 106,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-107",
+      "title": "Ta Pedindo Toma",
+      "artist": "MC Leozinho ZS, MC Murilo MT",
+      "album": "Na Contramão",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Ta%20Pedindo%20Toma%20MC%20Leozinho%20ZS",
+      "playlistPosition": 107,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-108",
+      "title": "Um Peão Desse",
+      "artist": "CountryBeat, Mari Fernandez",
+      "album": "Um Peão Desse",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Um%20Pe%C3%A3o%20Desse%20CountryBeat",
+      "playlistPosition": 108,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-109",
+      "title": "KURVY V POZORU",
+      "artist": "PTK, Eclipse",
+      "album": "KURVY V POZORU",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/KURVY%20V%20POZORU%20PTK",
+      "playlistPosition": 109,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-110",
+      "title": "Garee2a Awy - A COLORS SHOW",
+      "artist": "TUL8TE, COLORS",
+      "album": "Garee2a Awy - A COLORS SHOW",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Garee2a%20Awy%20-%20A%20COLORS%20SHOW%20TUL8TE",
+      "playlistPosition": 110,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-111",
+      "title": "Wala Ash Wala Kan",
+      "artist": "TUL8TE",
+      "album": "Sadeek El Bernameg",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Wala%20Ash%20Wala%20Kan%20TUL8TE",
+      "playlistPosition": 111,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-112",
+      "title": "Väärä nainen",
+      "artist": "Ida",
+      "album": "Väärä nainen",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/V%C3%A4%C3%A4r%C3%A4%20nainen%20Ida",
+      "playlistPosition": 112,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-113",
+      "title": "ORES",
+      "artist": "Saske",
+      "album": "I TRIED",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/ORES%20Saske",
+      "playlistPosition": 113,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-114",
+      "title": "APROVEITAR",
+      "artist": "SNIK, MC Menor JP",
+      "album": "APROVEITAR",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/APROVEITAR%20SNIK",
+      "playlistPosition": 114,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-115",
+      "title": "GEITONIA KAI TILEFONO",
+      "artist": "TOQUEL, Bloody Hawk, Beyond",
+      "album": "10 (PART 2)",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/GEITONIA%20KAI%20TILEFONO%20TOQUEL",
+      "playlistPosition": 115,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-116",
+      "title": "Kominn heim",
+      "artist": "Kristmundur Axel, Bubbi Morthens",
+      "album": "Íslenski draumurinn",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Kominn%20heim%20Kristmundur%20Axel",
+      "playlistPosition": 116,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-117",
+      "title": "The Swell",
+      "artist": "Amble",
+      "album": "The Swell",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/The%20Swell%20Amble",
+      "playlistPosition": 117,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-118",
+      "title": "Da Dio",
+      "artist": "Bresh",
+      "album": "Mediterraneo (Deluxe)",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Da%20Dio%20Bresh",
+      "playlistPosition": 118,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-119",
+      "title": "LA GRACIOSA",
+      "artist": "Quevedo, Elvis Crespo",
+      "album": "EL BAIFO",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/LA%20GRACIOSA%20Quevedo",
+      "playlistPosition": 119,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-120",
+      "title": "FLAMENCO PARANOIA",
+      "artist": "Samurai Jay, Vito Sanz",
+      "album": "AMATORE",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/FLAMENCO%20PARANOIA%20Samurai%20Jay",
+      "playlistPosition": 120,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-121",
+      "title": "RIKI",
+      "artist": "Neton Vega",
+      "album": "RIKI",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/RIKI%20Neton%20Vega",
+      "playlistPosition": 121,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-122",
+      "title": "Me Rehúso",
+      "artist": "Danny Ocean",
+      "album": "54+1",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Me%20Reh%C3%BAso%20Danny%20Ocean",
+      "playlistPosition": 122,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-123",
+      "title": "COQUETA",
+      "artist": "Fuerza Regida, Grupo Frontera",
+      "album": "MALA MÍA",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/COQUETA%20Fuerza%20Regida",
+      "playlistPosition": 123,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": true,
+      "fresh": false,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-124",
+      "title": "WA3RA",
+      "artist": "Mirv48",
+      "album": "WA3RA",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/WA3RA%20Mirv48",
+      "playlistPosition": 124,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-125",
+      "title": "Ți-am furat femeia",
+      "artist": "MĂDĂTORRICELLI",
+      "album": "Ți-am furat femeia",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/%C8%9Ai-am%20furat%20femeia%20M%C4%82D%C4%82TORRICELLI",
+      "playlistPosition": 125,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-126",
+      "title": "Be Her",
+      "artist": "Ella Langley",
+      "album": "Dandelion",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Be%20Her%20Ella%20Langley",
+      "playlistPosition": 126,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-127",
+      "title": "Broken Window Serenade",
+      "artist": "Whiskey Myers",
+      "album": "Firewater",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Broken%20Window%20Serenade%20Whiskey%20Myers",
+      "playlistPosition": 127,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-128",
+      "title": "Great Expectation",
+      "artist": "SIENNA SPIRO",
+      "album": "Visitor",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Great%20Expectation%20SIENNA%20SPIRO",
+      "playlistPosition": 128,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-129",
+      "title": "Boston",
+      "artist": "STELLA LEFTY",
+      "album": "Long Way Home",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Boston%20STELLA%20LEFTY",
+      "playlistPosition": 129,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "13 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
+    },
+    {
+      "id": "track-130",
+      "title": "Ahora Soy Mi Prioridad",
+      "artist": "Nyla Stone",
+      "album": "Ahora Soy Mi Prioridad",
+      "releaseDate": null,
+      "releaseMonthYear": null,
+      "genre": null,
+      "artwork": null,
+      "appleUrl": null,
+      "spotifyUrl": "https://open.spotify.com/search/Ahora%20Soy%20Mi%20Prioridad%20Nyla%20Stone",
+      "playlistPosition": 130,
+      "chartRank": null,
+      "rankCategories": [],
+      "savedToLikes": false,
+      "fresh": true,
+      "likedAt": null,
+      "playlistMemberships": [
+        {
+          "name": "Septiembre 15 2025 HITS",
+          "spotifyId": "0M743ojL83o52L5xr3aDIX",
+          "addedRelative": "7 hours ago"
+        }
+      ],
+      "subjectiveLinks": [],
+      "notes": "",
+      "lyricsUrl": null,
+      "metadata": {
+        "source": "Captura de Spotify",
+        "confidence": null,
+        "verified": false
+      }
     }
-  ],
-  "links": [
-    { "source": "enjoy-the-silence", "target": "blue-monday", "type": "Sonido", "reason": "Sintetizadores oscuros, bajo secuenciado y una pista de baile emocional." },
-    { "source": "enjoy-the-silence", "target": "a-forest", "type": "Atmósfera", "reason": "Tensión nocturna, economía instrumental y melancolía expansiva." },
-    { "source": "enjoy-the-silence", "target": "smalltown-boy", "type": "Emoción", "reason": "Vulnerabilidad contenida sobre una arquitectura electrónica bailable." },
-    { "source": "enjoy-the-silence", "target": "west-end-girls", "type": "Escena", "reason": "Pop electrónico británico que convierte la alienación urbana en elegancia." },
-    { "source": "enjoy-the-silence", "target": "personal-jesus", "type": "Álbum", "reason": "Dos caras de Violator: intimidad sintética y blues electrónico industrial." },
-    { "source": "blue-monday", "target": "bizarre-love-triangle", "type": "Artista", "reason": "La evolución de New Order desde el golpe mecánico hacia un pop más luminoso." },
-    { "source": "blue-monday", "target": "true-faith", "type": "Artista", "reason": "Secuencias rítmicas precisas y una melancolía diseñada para la pista." },
-    { "source": "blue-monday", "target": "love-will-tear-us-apart", "type": "Historia", "reason": "La transformación de Joy Division en New Order después de 1980." },
-    { "source": "a-forest", "target": "love-will-tear-us-apart", "type": "Escena", "reason": "El post-punk británico une bajo protagonista, repetición y distancia emocional." },
-    { "source": "a-forest", "target": "fade-to-grey", "type": "Atmósfera", "reason": "Frialdad europea, romanticismo sombrío y texturas minimalistas." },
-    { "source": "smalltown-boy", "target": "west-end-girls", "type": "Narrativa", "reason": "Historias de desplazamiento social contadas desde el pop electrónico." },
-    { "source": "smalltown-boy", "target": "sweet-dreams", "type": "Producción", "reason": "Ritmo sintético frontal, voz inconfundible y tensión entre dureza y fragilidad." },
-    { "source": "west-end-girls", "target": "bizarre-love-triangle", "type": "Época", "reason": "La sofisticación electrónica del pop británico de mediados de los ochenta." },
-    { "source": "sweet-dreams", "target": "dont-you-want-me", "type": "Época", "reason": "Synthpop temprano con melodías inmediatas y producción austera." },
-    { "source": "fade-to-grey", "target": "dont-you-want-me", "type": "Escena", "reason": "El giro del new romantic hacia el pop electrónico masivo." },
-    { "source": "personal-jesus", "target": "love-will-tear-us-apart", "type": "Influencia", "reason": "La austeridad post-punk permanece bajo una producción más física e industrial." },
-    { "source": "true-faith", "target": "bizarre-love-triangle", "type": "Artista", "reason": "Dos síntesis distintas de euforia rítmica y desasosiego lírico." },
-    { "source": "fade-to-grey", "target": "sweet-dreams", "type": "Sonido", "reason": "Motivos sintéticos repetitivos, dramatismo vocal y estética europea fría." }
   ]
 }
-

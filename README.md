@@ -1,44 +1,39 @@
-# Red musical interactiva
+# Constelación sonora
 
-Un mapa navegable de canciones relacionadas. Cada nodo representa una canción y cada línea explica una relación musical: sonido, época, escena, producción o influencia.
+Archivo musical personal en forma de red interactiva. La primera colección importada es **Septiembre 15 2025 HITS**, con 130 canciones reconstruidas desde capturas de Spotify.
 
 ## Funciones
 
-- Red SVG con zoom, desplazamiento y nodos arrastrables.
+- Red SVG con zoom y desplazamiento.
 - Buscador por canción, artista o álbum.
-- Filtros por género.
-- Panel lateral con metadatos y explicación de cada conexión.
+- Tres pestañas de nodos: información intrínseca, datos de cuenta y relaciones subjetivas.
+- Categorías acumulativas de ranking: `50.1`, `10.1` y `A.1`.
+- Distinción entre canciones guardadas en Likes y canciones `Fresh`.
+- Panel lateral con metadatos, estado personal, ranking, lyrics y notas.
 - Enlaces a Spotify.
 - Diseño adaptable para computadora y móvil.
 - Sin dependencias de compilación: HTML, CSS y JavaScript.
 
-## Editar las canciones
+## Modelo de datos
 
-Los nodos y relaciones viven en `songs.json`.
+Los nodos viven en `songs.json`. `playlist-source.json` conserva la transcripción de las capturas y `scripts/enrich.mjs` permite completar metadatos desde Apple Search API.
 
-Cada canción necesita un `id` único. Las relaciones usan esos identificadores en `source` y `target`.
+Las fechas de incorporación a Likes permanecen en `null` cuando no existe evidencia: la fecha relativa mostrada por Spotify corresponde a la incorporación a la playlist, no necesariamente a Likes.
 
 ```json
 {
-  "songs": [
-    {
-      "id": "enjoy-the-silence",
-      "title": "Enjoy the Silence",
-      "artist": "Depeche Mode",
-      "album": "Violator",
-      "year": 1990,
-      "genre": "Synthpop",
-      "spotifyUrl": "https://open.spotify.com/search/Enjoy%20the%20Silence%20Depeche%20Mode"
-    }
-  ],
-  "links": [
-    {
-      "source": "enjoy-the-silence",
-      "target": "blue-monday",
-      "type": "Sonido",
-      "reason": "Sintetizadores oscuros y pulso bailable."
-    }
-  ]
+  "id": "track-001",
+  "title": "Andromeda",
+  "artist": "Weyes Blood",
+  "album": "Titanic Rising",
+  "releaseDate": "2019-04-05",
+  "playlistPosition": 1,
+  "chartRank": 1,
+  "rankCategories": ["50.1", "10.1", "A.1"],
+  "savedToLikes": true,
+  "fresh": false,
+  "likedAt": null,
+  "subjectiveLinks": []
 }
 ```
 
@@ -52,7 +47,14 @@ python -m http.server 8080
 
 Después visita `http://localhost:8080`.
 
+## Enriquecimiento
+
+```bash
+node scripts/enrich.mjs
+```
+
+El script conserva coincidencias verificadas y deja como pendientes las que no alcanza a corroborar.
+
 ## Publicación
 
 El flujo incluido en `.github/workflows/pages.yml` publica el sitio mediante GitHub Pages al enviar cambios a `main`.
-

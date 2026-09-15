@@ -1,191 +1,253 @@
-const TYPE_COLORS = {
-  Sonido: '#bcff3c',
-  'Atmósfera': '#a98bff',
-  'Emoción': '#ff5c8a',
-  Escena: '#5ce1e6',
-  Álbum: '#ffba49',
-  Artista: '#ffba49',
-  Historia: '#ff7a5c',
-  Narrativa: '#ff5c8a',
-  'Producción': '#bcff3c',
-  'Época': '#5ce1e6',
-  Influencia: '#a98bff'
+const COLORS = {
+  song: '#d9d8d3',
+  a: '#f4be54',
+  ten: '#9d82ff',
+  fifty: '#56dfe6',
+  unranked: '#6f7279',
+  fresh: '#ff6f7d',
+  saved: '#b8ff3d',
+  release: '#f4be54',
+  album: '#9d82ff',
+  artist: '#56dfe6',
+  genre: '#ff6f7d',
+  playlist: '#56dfe6',
+  ranking: '#f4be54',
+  sibling: '#ff6f7d',
+  cousin: '#9d82ff',
+  child: '#56dfe6'
 };
 
 const state = {
   data: null,
-  genre: 'Todos',
+  view: 'intrinsic',
+  filter: 'Todos',
   query: '',
   selectedId: null,
   transform: { x: 0, y: 0, scale: 1 },
-  draggingNode: null,
-  panning: null,
-  animationFrame: null
+  panning: null
 };
 
 const els = {
   svg: document.querySelector('#graph'),
   viewport: document.querySelector('#viewport'),
+  rings: document.querySelector('#rankRings'),
   links: document.querySelector('#links'),
-  nodes: document.querySelector('#nodes'),
-  network: document.querySelector('#network'),
-  filters: document.querySelector('#genreFilters'),
+  attributes: document.querySelector('#attributeNodes'),
+  songs: document.querySelector('#songNodes'),
+  filters: document.querySelector('#filters'),
   count: document.querySelector('#resultCount'),
   search: document.querySelector('#search'),
+  network: document.querySelector('#network'),
   details: document.querySelector('#details'),
-  template: document.querySelector('#detailsTemplate'),
+  detailsTemplate: document.querySelector('#detailsTemplate'),
+  empty: document.querySelector('#emptyState'),
   legend: document.querySelector('#legend'),
-  empty: document.querySelector('#emptyState')
+  instruction: document.querySelector('#instruction'),
+  playlistName: document.querySelector('#playlistName')
 };
 
-const normalize = (text) => String(text).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+const normalize = text => String(text || '')
+  .normalize('NFD')
+  .replace(/[\u0300-\u036f]/g, '')
+  .toLowerCase();
+
 const svgElement = (tag, attrs = {}) => {
-  const el = document.createElementNS('http://www.w3.org/2000/svg', tag);
-  Object.entries(attrs).forEach(([key, value]) => el.setAttribute(key, value));
-  return el;
+  const element = document.createElementNS('http://www.w3.org/2000/svg', tag);
+  Object.entries(attrs).forEach(([key, value]) => element.setAttribute(key, value));
+  return element;
 };
+
+const truncate = (text, length = 28) => text.length > length ? `${text.slice(0, length - 1)}…` : text;
 
 async function init() {
   try {
     const response = await fetch('songs.json');
     if (!response.ok) throw new Error(`No se pudieron cargar los datos (${response.status})`);
     state.data = await response.json();
-    seedPositions();
-    buildFilters();
-    buildLegend();
+    els.playlistName.textContent = state.data.playlist.name;
+    layoutSongs();
     bindControls();
-    applyFilters();
+    renderFilters();
+    renderLegend();
+    renderGraph();
     resetView(false);
   } catch (error) {
     els.empty.hidden = false;
-    els.empty.querySelector('span').textContent = 'No se pudo abrir la red';
-    els.empty.querySelector('p').textContent = error.message;
+    els.empty.querySelector('strong').textContent = 'No se pudo abrir la red';
+    els.empty.querySelector('span').textContent = error.message;
   }
 }
 
-function seedPositions() {
-  const width = Math.max(els.network.clientWidth, 700);
-  const height = Math.max(els.network.clientHeight, 500);
-  state.data.songs.forEach((song, index) => {
-    const angle = (index / state.data.songs.length) * Math.PI * 2;
-    const radius = Math.min(width, height) * (0.22 + (index % 3) * 0.035);
-    song.x = width / 2 + Math.cos(angle) * radius;
-    song.y = height / 2 + Math.sin(angle) * radius;
-    song.vx = 0;
-    song.vy = 0;
+function bindControls() {
+  document.querySelectorAll('.view-tab').forEach(button => {
+    button.addEventListener('click', () => {
+      state.view = button.dataset.view;
+      state.filter = 'Todos';
+      document.querySelectorAll('.view-tab').forEach(tab => tab.classList.toggle('active', tab === button));
+      renderFilters();
+      renderLegend();
+      renderGraph();
+    });
+  });
+
+  let searchTimer;
+  els.search.addEventListener('input', event => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      state.query = normalize(event.target.value.trim());
+      updateVisibility();
+    }, 90);
+  });
+
+  document.querySelector('#resetView').addEventListener('click', () => resetView());
+  document.querySelector('#zoomIn').addEventListener('click', () => zoomBy(1.2));
+  document.querySelector('#zoomOut').addEventListener('click', () => zoomBy(.82));
+
+  els.svg.addEventListener('wheel', event => {
+    event.preventDefault();
+    const rect = els.svg.getBoundingClientRect();
+    zoomBy(event.deltaY < 0 ? 1.1 : .9, event.clientX - rect.left, event.clientY - rect.top);
+  }, { passive: false });
+
+  els.svg.addEventListener('pointerdown', event => {
+    if (event.target.closest?.('.song-node')) return;
+    state.panning = {
+      startX: event.clientX,
+      startY: event.clientY,
+      x: state.transform.x,
+      y: state.transform.y
+    };
+    els.svg.classList.add('panning');
+  });
+
+  window.addEventListener('pointermove', event => {
+    if (!state.panning) return;
+    state.transform.x = state.panning.x + event.clientX - state.panning.startX;
+    state.transform.y = state.panning.y + event.clientY - state.panning.startY;
+    applyTransform();
+  });
+
+  window.addEventListener('pointerup', () => {
+    state.panning = null;
+    els.svg.classList.remove('panning');
+  });
+
+  window.addEventListener('resize', () => resetView(false));
+}
+
+function tierFor(song) {
+  if (song.rankCategories.includes('A.1')) return { key: 'a', color: COLORS.a };
+  if (song.rankCategories.includes('10.1')) return { key: 'ten', color: COLORS.ten };
+  if (song.rankCategories.includes('50.1')) return { key: 'fifty', color: COLORS.fifty };
+  return { key: 'unranked', color: COLORS.unranked };
+}
+
+function ringForPosition(position) {
+  if (position <= 3) return { radius: 78, index: position - 1, total: 3 };
+  if (position <= 10) return { radius: 138, index: position - 4, total: 7 };
+  if (position <= 30) return { radius: 220, index: position - 11, total: 20 };
+  if (position <= 50) return { radius: 285, index: position - 31, total: 20 };
+  if (position <= 90) return { radius: 365, index: position - 51, total: 40 };
+  return { radius: 445, index: position - 91, total: 40 };
+}
+
+function layoutSongs() {
+  state.data.songs.forEach(song => {
+    const ring = ringForPosition(song.playlistPosition);
+    const angle = -Math.PI / 2 + (ring.index / ring.total) * Math.PI * 2;
+    song.x = Math.cos(angle) * ring.radius;
+    song.y = Math.sin(angle) * ring.radius;
   });
 }
 
-function buildFilters() {
-  const genres = ['Todos', ...new Set(state.data.songs.map(song => song.genre))];
-  genres.forEach(genre => {
+function filterOptions() {
+  if (state.view === 'account') return ['Todos', 'A.1', '10.1', '50.1', 'Fresh', 'En Likes'];
+  if (state.view === 'subjective') return ['Todos', 'Hermano', 'Primo', 'Hijo', 'Sin relación'];
+  const genres = [...new Set(state.data.songs.map(song => song.genre).filter(Boolean))];
+  const common = genres
+    .map(genre => ({ genre, count: state.data.songs.filter(song => song.genre === genre).length }))
+    .sort((a, b) => b.count - a.count || a.genre.localeCompare(b.genre))
+    .slice(0, 5)
+    .map(item => item.genre);
+  return ['Todos', 'Verificadas', 'Fecha pendiente', ...common];
+}
+
+function renderFilters() {
+  els.filters.replaceChildren();
+  filterOptions().forEach(option => {
     const button = document.createElement('button');
     button.type = 'button';
-    button.className = `filter-button${genre === state.genre ? ' active' : ''}`;
-    button.textContent = genre;
+    button.className = `filter-button${state.filter === option ? ' active' : ''}`;
+    button.textContent = option;
     button.addEventListener('click', () => {
-      state.genre = genre;
+      state.filter = option;
       [...els.filters.children].forEach(item => item.classList.toggle('active', item === button));
-      applyFilters();
+      updateVisibility();
     });
     els.filters.append(button);
   });
 }
 
-function buildLegend() {
-  const types = [...new Set(state.data.links.map(link => link.type))];
-  types.slice(0, 5).forEach(type => {
+function renderLegend() {
+  const definitions = state.view === 'intrinsic'
+    ? [['Lanzamiento', COLORS.release], ['Álbum', COLORS.album], ['Artista', COLORS.artist], ['Género', COLORS.genre]]
+    : state.view === 'account'
+      ? [['En Likes', COLORS.saved], ['Fresh', COLORS.fresh, 'transparent'], ['Playlist', COLORS.playlist], ['Ranking', COLORS.ranking]]
+      : [['Hermano', COLORS.sibling], ['Primo', COLORS.cousin], ['Hijo', COLORS.child]];
+
+  els.legend.replaceChildren();
+  definitions.forEach(([label, color, fill]) => {
     const item = document.createElement('span');
     item.className = 'legend-item';
-    item.style.setProperty('--legend-color', TYPE_COLORS[type] || '#888');
-    item.innerHTML = `<i></i>${type}`;
+    item.style.setProperty('--legend-color', color);
+    item.style.setProperty('--legend-fill', fill || color);
+    item.innerHTML = `<i></i>${label}`;
     els.legend.append(item);
   });
 }
 
-function bindControls() {
-  let debounce;
-  els.search.addEventListener('input', event => {
-    clearTimeout(debounce);
-    debounce = setTimeout(() => {
-      state.query = normalize(event.target.value.trim());
-      applyFilters();
-    }, 100);
-  });
-
-  document.querySelector('#resetView').addEventListener('click', () => resetView());
-  document.querySelector('#zoomIn').addEventListener('click', () => zoomBy(1.2));
-  document.querySelector('#zoomOut').addEventListener('click', () => zoomBy(0.82));
-
-  els.svg.addEventListener('wheel', event => {
-    event.preventDefault();
-    const rect = els.svg.getBoundingClientRect();
-    zoomBy(event.deltaY < 0 ? 1.1 : 0.9, event.clientX - rect.left, event.clientY - rect.top);
-  }, { passive: false });
-
-  els.svg.addEventListener('pointerdown', startPan);
-  window.addEventListener('pointermove', movePointer);
-  window.addEventListener('pointerup', endPointer);
-  window.addEventListener('resize', () => renderGraph());
-}
-
-function getVisibleData() {
-  const songs = state.data.songs.filter(song => {
-    const genreMatch = state.genre === 'Todos' || song.genre === state.genre;
-    const haystack = normalize(`${song.title} ${song.artist} ${song.album}`);
-    return genreMatch && (!state.query || haystack.includes(state.query));
-  });
-  const ids = new Set(songs.map(song => song.id));
-  const links = state.data.links.filter(link => ids.has(link.source) && ids.has(link.target));
-  return { songs, links, ids };
-}
-
-function applyFilters() {
-  const visible = getVisibleData();
-  els.count.textContent = `${visible.songs.length} ${visible.songs.length === 1 ? 'canción' : 'canciones'}`;
-  els.empty.hidden = visible.songs.length > 0;
-
-  if (state.selectedId && !visible.ids.has(state.selectedId)) {
-    state.selectedId = null;
-    showEmptyDetails();
-  }
-
-  renderGraph(visible);
-  startSimulation();
-}
-
-function renderGraph(visible = getVisibleData()) {
+function renderGraph() {
+  els.rings.replaceChildren();
   els.links.replaceChildren();
-  els.nodes.replaceChildren();
-  const songsById = new Map(state.data.songs.map(song => [song.id, song]));
+  els.attributes.replaceChildren();
+  els.songs.replaceChildren();
 
-  visible.links.forEach(link => {
-    const line = svgElement('line', { class: 'link', 'data-source': link.source, 'data-target': link.target });
-    line.style.setProperty('--link-color', TYPE_COLORS[link.type] || '#aaa');
-    link.element = line;
-    els.links.append(line);
+  [
+    [78, 'A.1'],
+    [138, '10.1'],
+    [285, '50.1'],
+    [445, 'SIN ORDEN']
+  ].forEach(([radius, label]) => {
+    els.rings.append(svgElement('circle', { class: 'rank-ring', cx: 0, cy: 0, r: radius }));
+    const text = svgElement('text', { class: 'rank-ring-label', x: 7, y: -radius + 13 });
+    text.textContent = label;
+    els.rings.append(text);
   });
 
-  visible.songs.forEach(song => {
+  state.data.songs.forEach(song => {
+    const tier = tierFor(song);
     const group = svgElement('g', {
-      class: `node${state.selectedId === song.id ? ' selected' : ''}`,
+      class: `song-node ${tier.key} ${song.fresh ? 'fresh' : 'saved'} ${song.playlistPosition <= 3 ? 'priority' : ''} ${state.selectedId === song.id ? 'selected' : ''} ${state.selectedId && state.selectedId !== song.id ? 'dimmed' : ''}`,
+      transform: `translate(${song.x} ${song.y})`,
       tabindex: '0',
       role: 'button',
-      'aria-label': `${song.title}, ${song.artist}, ${song.year}`,
+      'aria-label': `${song.title}, ${song.artist}`,
       'data-id': song.id
     });
-    group.style.setProperty('--node-color', song.color);
-
-    const halo = svgElement('circle', { class: 'halo', r: 21 });
-    const core = svgElement('circle', { class: 'core', r: 11, fill: song.color });
-    const titleWidth = Math.min(Math.max(song.title.length * 6.2, 58), 150);
-    const labelBg = svgElement('rect', { class: 'label-bg', x: 17, y: -16, width: titleWidth + 12, height: 33, rx: 7 });
-    const title = svgElement('text', { x: 23, y: -2 });
-    title.textContent = song.title.length > 23 ? `${song.title.slice(0, 22)}…` : song.title;
-    const artist = svgElement('text', { class: 'artist-label', x: 23, y: 11 });
-    artist.textContent = song.artist;
-    group.append(halo, core, labelBg, title, artist);
-
+    group.style.setProperty('--node-color', song.fresh ? COLORS.fresh : tier.color);
+    const radius = song.playlistPosition <= 3 ? 9 : song.playlistPosition <= 10 ? 7 : 5.5;
+    group.append(
+      svgElement('circle', { class: 'node-hit', r: 15 }),
+      svgElement('circle', { class: 'node-halo', r: radius + 5 }),
+      svgElement('circle', {
+        class: 'node-core',
+        r: radius,
+        fill: song.fresh ? 'transparent' : tier.color
+      })
+    );
+    const text = svgElement('text', { x: radius + 7, y: 3 });
+    text.textContent = `${song.chartRank ? `#${song.chartRank} · ` : ''}${truncate(song.title, 23)}`;
+    group.append(text);
     group.addEventListener('click', event => {
       event.stopPropagation();
       selectSong(song.id);
@@ -196,209 +258,256 @@ function renderGraph(visible = getVisibleData()) {
         selectSong(song.id);
       }
     });
-    group.addEventListener('pointerdown', event => startNodeDrag(event, song));
     song.element = group;
-    els.nodes.append(group);
+    els.songs.append(group);
   });
 
-  state.data.links.forEach(link => {
-    link.sourceNode = songsById.get(link.source);
-    link.targetNode = songsById.get(link.target);
-  });
-  updatePositions();
-  updateSelectionStyles();
+  updateVisibility();
+  if (state.selectedId) renderAttributes(state.data.songs.find(song => song.id === state.selectedId));
 }
 
-function startSimulation() {
-  cancelAnimationFrame(state.animationFrame);
-  let ticks = 0;
+function matchesCurrentFilter(song) {
+  const searchable = normalize(`${song.title} ${song.artist} ${song.album}`);
+  if (state.query && !searchable.includes(state.query)) return false;
+  if (state.filter === 'Todos') return true;
 
-  const tick = () => {
-    const { songs, links } = getVisibleData();
-    const width = els.network.clientWidth;
-    const height = els.network.clientHeight;
+  if (state.view === 'account') {
+    if (['A.1', '10.1', '50.1'].includes(state.filter)) return song.rankCategories.includes(state.filter);
+    if (state.filter === 'Fresh') return song.fresh;
+    if (state.filter === 'En Likes') return song.savedToLikes;
+  }
 
-    for (let i = 0; i < songs.length; i++) {
-      for (let j = i + 1; j < songs.length; j++) {
-        const a = songs[i];
-        const b = songs[j];
-        let dx = b.x - a.x;
-        let dy = b.y - a.y;
-        const distanceSq = Math.max(dx * dx + dy * dy, 80);
-        const distance = Math.sqrt(distanceSq);
-        const force = 1300 / distanceSq;
-        dx /= distance;
-        dy /= distance;
-        a.vx -= dx * force;
-        a.vy -= dy * force;
-        b.vx += dx * force;
-        b.vy += dy * force;
-      }
-    }
+  if (state.view === 'intrinsic') {
+    if (state.filter === 'Verificadas') return song.metadata.verified;
+    if (state.filter === 'Fecha pendiente') return !song.releaseDate;
+    return song.genre === state.filter;
+  }
 
-    links.forEach(link => {
-      const a = link.sourceNode;
-      const b = link.targetNode;
-      const dx = b.x - a.x;
-      const dy = b.y - a.y;
-      const distance = Math.max(Math.hypot(dx, dy), 1);
-      const force = (distance - 145) * 0.0025;
-      a.vx += (dx / distance) * force;
-      a.vy += (dy / distance) * force;
-      b.vx -= (dx / distance) * force;
-      b.vy -= (dy / distance) * force;
-    });
-
-    songs.forEach(song => {
-      if (state.draggingNode !== song) {
-        song.vx += (width / 2 - song.x) * 0.00035;
-        song.vy += (height / 2 - song.y) * 0.00035;
-        song.vx *= 0.91;
-        song.vy *= 0.91;
-        song.x = Math.max(45, Math.min(width - 180, song.x + song.vx));
-        song.y = Math.max(35, Math.min(height - 35, song.y + song.vy));
-      }
-    });
-
-    updatePositions();
-    ticks += 1;
-    if (ticks < 300) state.animationFrame = requestAnimationFrame(tick);
-  };
-  state.animationFrame = requestAnimationFrame(tick);
+  if (state.view === 'subjective') {
+    if (state.filter === 'Sin relación') return song.subjectiveLinks.length === 0;
+    const type = { Hermano: 'sibling', Primo: 'cousin', Hijo: 'child' }[state.filter];
+    return song.subjectiveLinks.some(link => link.type === type);
+  }
+  return true;
 }
 
-function updatePositions() {
-  const visible = getVisibleData();
-  visible.songs.forEach(song => song.element?.setAttribute('transform', `translate(${song.x}, ${song.y})`));
-  visible.links.forEach(link => {
-    if (!link.element) return;
-    link.element.setAttribute('x1', link.sourceNode.x);
-    link.element.setAttribute('y1', link.sourceNode.y);
-    link.element.setAttribute('x2', link.targetNode.x);
-    link.element.setAttribute('y2', link.targetNode.y);
-  });
+function updateVisibility() {
+  if (!state.data) return;
+  const visible = state.data.songs.filter(matchesCurrentFilter);
+  const visibleIds = new Set(visible.map(song => song.id));
+  state.data.songs.forEach(song => song.element?.classList.toggle('filtered', !visibleIds.has(song.id)));
+  els.count.textContent = `${visible.length} de ${state.data.songs.length}`;
+  els.empty.hidden = visible.length > 0;
+
+  if (state.selectedId && !visibleIds.has(state.selectedId)) {
+    state.selectedId = null;
+    els.attributes.replaceChildren();
+    els.links.replaceChildren();
+    showEmptyDetails();
+  }
 }
 
 function selectSong(id) {
   state.selectedId = id;
   const song = state.data.songs.find(item => item.id === id);
-  const related = state.data.links
-    .filter(link => link.source === id || link.target === id)
-    .map(link => ({
-      link,
-      song: state.data.songs.find(item => item.id === (link.source === id ? link.target : link.source))
-    }));
-
-  const fragment = els.template.content.cloneNode(true);
-  const article = fragment.querySelector('.song-details');
-  article.style.setProperty('--song-color', song.color);
-  fragment.querySelector('.song-genre').textContent = song.genre;
-  fragment.querySelector('.song-title').textContent = song.title;
-  fragment.querySelector('.song-artist').textContent = song.artist;
-  fragment.querySelector('.song-album').textContent = song.album;
-  fragment.querySelector('.song-year').textContent = song.year;
-  const spotify = fragment.querySelector('.spotify-button');
-  spotify.href = song.spotifyUrl;
-  spotify.setAttribute('aria-label', `Abrir ${song.title} en Spotify`);
-  fragment.querySelector('.connection-count').textContent = `${related.length} ${related.length === 1 ? 'vínculo' : 'vínculos'}`;
-
-  const list = fragment.querySelector('.connection-list');
-  related.forEach(({ link, song: other }) => {
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'connection-item';
-    button.style.setProperty('--connection-color', TYPE_COLORS[link.type] || other.color);
-    button.innerHTML = `
-      <span class="connection-swatch"></span>
-      <span class="connection-copy"><strong>${other.title}</strong><span>${other.artist}</span></span>
-      <span class="connection-type">${link.type}</span>
-      <span class="connection-reason">${link.reason}</span>
-    `;
-    button.addEventListener('click', () => selectSong(other.id));
-    list.append(button);
+  state.data.songs.forEach(item => {
+    item.element?.classList.toggle('selected', item.id === id);
+    item.element?.classList.toggle('dimmed', item.id !== id);
   });
-
-  els.details.replaceChildren(fragment);
-  els.details.scrollTop = 0;
-  updateSelectionStyles();
+  els.instruction.hidden = true;
+  renderAttributes(song);
+  renderDetails(song);
+  focusOnSong(song);
 }
 
-function updateSelectionStyles() {
-  document.querySelectorAll('.node').forEach(node => {
-    const id = node.dataset.id;
-    const related = !state.selectedId || state.data.links.some(link =>
-      (link.source === state.selectedId && link.target === id) ||
-      (link.target === state.selectedId && link.source === id)
-    );
-    node.classList.toggle('selected', id === state.selectedId);
-    node.classList.toggle('dimmed', Boolean(state.selectedId) && id !== state.selectedId && !related);
-  });
+function attributesFor(song) {
+  if (state.view === 'intrinsic') {
+    return [
+      { type: 'LANZAMIENTO', value: formatMonthYear(song.releaseDate), color: COLORS.release, pending: !song.releaseDate },
+      { type: 'ÁLBUM', value: song.album || 'Pendiente', color: COLORS.album, pending: !song.album },
+      { type: 'ARTISTA', value: song.artist || 'Pendiente', color: COLORS.artist, pending: !song.artist },
+      { type: 'GÉNERO', value: song.genre || 'Pendiente', color: COLORS.genre, pending: !song.genre }
+    ];
+  }
+  if (state.view === 'account') {
+    const ranking = song.rankCategories.length
+      ? `${song.chartRank ? `#${song.chartRank} · ` : ''}${song.rankCategories.join(' · ')}`
+      : 'Sin orden definido';
+    return [
+      {
+        type: song.fresh ? 'FRESH' : 'LIKES',
+        value: song.fresh ? 'Aún no ingresada' : song.likedAt || 'Fecha pendiente',
+        color: song.fresh ? COLORS.fresh : COLORS.saved,
+        pending: !song.fresh && !song.likedAt
+      },
+      {
+        type: 'PLAYLIST',
+        value: truncate(song.playlistMemberships[0].name, 30),
+        color: COLORS.playlist
+      },
+      {
+        type: 'RANKING',
+        value: ranking,
+        color: COLORS.ranking
+      }
+    ];
+  }
+  return [
+    { type: 'HERMANO', value: 'Sin definir', color: COLORS.sibling, pending: true },
+    { type: 'PRIMO', value: 'Sin definir', color: COLORS.cousin, pending: true },
+    { type: 'HIJO', value: 'Sin definir', color: COLORS.child, pending: true }
+  ];
+}
 
-  document.querySelectorAll('.link').forEach(line => {
-    const active = state.selectedId && (line.dataset.source === state.selectedId || line.dataset.target === state.selectedId);
-    line.classList.toggle('active', Boolean(active));
-    line.classList.toggle('dimmed', Boolean(state.selectedId) && !active);
+function renderAttributes(song) {
+  els.links.replaceChildren();
+  els.attributes.replaceChildren();
+  const attributes = attributesFor(song);
+  const radius = state.view === 'intrinsic' ? 122 : 112;
+
+  attributes.forEach((attribute, index) => {
+    const angle = -Math.PI / 2 + (index / attributes.length) * Math.PI * 2;
+    const x = song.x + Math.cos(angle) * radius;
+    const y = song.y + Math.sin(angle) * radius;
+    const line = svgElement('line', {
+      class: 'attribute-link',
+      x1: song.x,
+      y1: song.y,
+      x2: x,
+      y2: y
+    });
+    line.style.setProperty('--link-color', attribute.color);
+    els.links.append(line);
+
+    const group = svgElement('g', {
+      class: `attribute-node${attribute.pending ? ' placeholder' : ''}`,
+      transform: `translate(${x} ${y})`
+    });
+    group.style.setProperty('--attr-color', attribute.color);
+    group.append(svgElement('circle', { r: 34 }));
+    const type = svgElement('text', { class: 'attr-type', y: -7 });
+    type.textContent = attribute.type;
+    const value = svgElement('text', { y: 8 });
+    value.textContent = truncate(attribute.value, 22);
+    group.append(type, value);
+    els.attributes.append(group);
   });
+}
+
+function renderDetails(song) {
+  const fragment = els.detailsTemplate.content.cloneNode(true);
+  const tier = tierFor(song);
+  const fallback = fragment.querySelector('.cover-fallback');
+  fallback.style.setProperty('--cover-color', song.fresh ? COLORS.fresh : tier.color);
+  const image = fragment.querySelector('.song-cover');
+  if (song.artwork) {
+    image.src = song.artwork;
+    image.alt = `Portada de ${song.album}`;
+    image.addEventListener('load', () => image.classList.add('loaded'));
+  }
+  fragment.querySelector('.position-badge').textContent = song.chartRank ? `#${song.chartRank}` : `Nº ${song.playlistPosition}`;
+  fragment.querySelector('.song-title').textContent = song.title;
+  fragment.querySelector('.song-artist').textContent = song.artist;
+  fragment.querySelector('.song-release').textContent = formatDate(song.releaseDate);
+  fragment.querySelector('.song-genre').textContent = song.genre || 'Pendiente';
+  fragment.querySelector('.song-album').textContent = song.album || 'Pendiente';
+  fragment.querySelector('.liked-date').textContent = song.fresh
+    ? 'Fresh — aún no ingresada'
+    : song.likedAt || 'Guardada — fecha pendiente';
+  fragment.querySelector('.playlist-membership').textContent =
+    `${song.playlistMemberships[0].name} · ${song.playlistMemberships[0].addedRelative}`;
+  fragment.querySelector('.max-ranking').textContent = song.rankCategories.length
+    ? `#${song.chartRank} · ${song.rankCategories.join(' · ')}`
+    : 'Sin orden definido';
+
+  const status = fragment.querySelector('.status-row');
+  status.append(makeChip(song.fresh ? 'Fresh' : 'En Likes', song.fresh ? COLORS.fresh : COLORS.saved));
+  status.append(makeChip(song.metadata.verified ? 'Metadata verificada' : 'Metadata pendiente', tier.color, true));
+
+  const badges = fragment.querySelector('.rank-badges');
+  song.rankCategories.forEach(category => {
+    const badge = document.createElement('span');
+    badge.className = 'rank-badge';
+    badge.style.setProperty('--badge-color', category === 'A.1' ? COLORS.a : category === '10.1' ? COLORS.ten : COLORS.fifty);
+    badge.textContent = category;
+    badges.append(badge);
+  });
+  if (!song.rankCategories.length) {
+    const badge = document.createElement('span');
+    badge.className = 'rank-badge';
+    badge.style.setProperty('--badge-color', COLORS.unranked);
+    badge.textContent = 'SIN ORDEN DEFINIDO';
+    badges.append(badge);
+  }
+
+  const spotify = fragment.querySelector('.spotify-button');
+  spotify.href = song.spotifyUrl;
+  spotify.setAttribute('aria-label', `Buscar ${song.title} en Spotify`);
+  els.details.replaceChildren(fragment);
+  els.details.scrollTop = 0;
+}
+
+function makeChip(label, color, outline = false) {
+  const chip = document.createElement('span');
+  chip.className = `status-chip${outline ? ' outline' : ''}`;
+  chip.style.setProperty('--chip-color', color);
+  chip.textContent = label;
+  return chip;
 }
 
 function showEmptyDetails() {
   els.details.innerHTML = `
     <div class="details-empty">
-      <div class="pulse-orbit" aria-hidden="true"><span></span></div>
-      <p class="eyebrow">EXPLORA LA RED</p>
-      <h2>Elige una canción</h2>
-      <p>Descubre por qué está conectada con las demás y sigue cada enlace en Spotify.</p>
+      <div class="empty-orbit" aria-hidden="true"><span></span></div>
+      <p class="eyebrow">FICHA DE CANCIÓN</p>
+      <h2>Ninguna selección</h2>
+      <p>Selecciona un nodo para consultar su información, estado dentro de tu cuenta y relaciones personales.</p>
     </div>`;
 }
 
-function startNodeDrag(event, song) {
-  event.stopPropagation();
-  event.preventDefault();
-  state.draggingNode = song;
-  song.vx = 0;
-  song.vy = 0;
-  els.svg.setPointerCapture?.(event.pointerId);
+function formatDate(date) {
+  if (!date) return 'Pendiente';
+  return new Intl.DateTimeFormat('es-MX', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+    .format(new Date(`${date}T00:00:00Z`));
 }
 
-function startPan(event) {
-  if (event.target.closest?.('.node')) return;
-  state.panning = { startX: event.clientX, startY: event.clientY, x: state.transform.x, y: state.transform.y };
-  els.svg.classList.add('panning');
+function formatMonthYear(date) {
+  if (!date) return 'Pendiente';
+  return new Intl.DateTimeFormat('es-MX', { month: 'short', year: 'numeric', timeZone: 'UTC' })
+    .format(new Date(`${date}T00:00:00Z`));
 }
 
-function movePointer(event) {
-  if (state.draggingNode) {
-    const rect = els.svg.getBoundingClientRect();
-    state.draggingNode.x = (event.clientX - rect.left - state.transform.x) / state.transform.scale;
-    state.draggingNode.y = (event.clientY - rect.top - state.transform.y) / state.transform.scale;
-    updatePositions();
-  } else if (state.panning) {
-    state.transform.x = state.panning.x + event.clientX - state.panning.startX;
-    state.transform.y = state.panning.y + event.clientY - state.panning.startY;
-    applyTransform();
-  }
+function focusOnSong(song) {
+  const width = els.network.clientWidth;
+  const height = els.network.clientHeight;
+  const scale = Math.max(.85, state.transform.scale);
+  state.transform = {
+    x: width / 2 - song.x * scale,
+    y: height / 2 - song.y * scale,
+    scale
+  };
+  els.viewport.style.transition = 'transform 240ms ease';
+  applyTransform();
+  setTimeout(() => { els.viewport.style.transition = 'none'; }, 250);
 }
 
-function endPointer() {
-  state.draggingNode = null;
-  state.panning = null;
-  els.svg.classList.remove('panning');
+function resetView(animate = true) {
+  const width = els.network.clientWidth;
+  const height = els.network.clientHeight;
+  const scale = Math.min(.96, Math.max(.56, (Math.min(width, height) - 60) / 900));
+  state.transform = { x: width / 2, y: height / 2, scale };
+  els.viewport.style.transition = animate ? 'transform 240ms ease' : 'none';
+  applyTransform();
+  if (animate) setTimeout(() => { els.viewport.style.transition = 'none'; }, 250);
 }
 
 function zoomBy(factor, centerX = els.network.clientWidth / 2, centerY = els.network.clientHeight / 2) {
   const oldScale = state.transform.scale;
-  const newScale = Math.max(0.55, Math.min(2.4, oldScale * factor));
+  const newScale = Math.max(.42, Math.min(2.4, oldScale * factor));
   state.transform.x = centerX - ((centerX - state.transform.x) / oldScale) * newScale;
   state.transform.y = centerY - ((centerY - state.transform.y) / oldScale) * newScale;
   state.transform.scale = newScale;
   applyTransform();
-}
-
-function resetView(animate = true) {
-  state.transform = { x: 0, y: 0, scale: 1 };
-  els.viewport.style.transition = animate ? 'transform 240ms ease' : 'none';
-  applyTransform();
-  setTimeout(() => { els.viewport.style.transition = 'none'; }, 250);
 }
 
 function applyTransform() {
@@ -407,4 +516,3 @@ function applyTransform() {
 }
 
 init();
-

@@ -3,12 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0a0a0b" />
-    <meta
-      name="description"
-      content="Mapa interactivo de canciones conectadas por sonido, época, escena e influencia."
-    />
-    <title>Constelación sonora</title>
+    <meta name="theme-color" content="#08090b" />
+    <meta name="description" content="Archivo musical personal en forma de red interactiva." />
+    <title>Constelación sonora · Septiembre 15 2025 HITS</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -16,68 +13,96 @@
 
     <main class="app-shell">
       <header class="topbar">
-        <div class="brand" aria-label="Constelación sonora">
-          <span class="brand-mark" aria-hidden="true">
-            <i></i><i></i><i></i>
-          </span>
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
           <div>
-            <p class="eyebrow">MAPA MUSICAL</p>
+            <p class="eyebrow">ARCHIVO MUSICAL PERSONAL</p>
             <h1>Constelación sonora</h1>
           </div>
         </div>
 
-        <div class="topbar-actions">
-          <label class="search-field" for="search">
-            <span class="sr-only">Buscar canción o artista</span>
-            <svg aria-hidden="true" viewBox="0 0 24 24">
-              <path d="m21 21-4.35-4.35m2.35-5.15A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z" />
-            </svg>
-            <input id="search" type="search" autocomplete="off" placeholder="Canción, artista o álbum…" />
-          </label>
-          <button id="resetView" class="ghost-button" type="button" title="Recentrar red">
-            Recentrar
-          </button>
+        <div class="playlist-identity">
+          <span class="playlist-dot"></span>
+          <div>
+            <small>PLAYLIST ACTIVA</small>
+            <strong id="playlistName">Septiembre 15 2025 HITS</strong>
+          </div>
         </div>
+
+        <label class="search-field" for="search">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="m21 21-4.35-4.35m2.35-5.15A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z" />
+          </svg>
+          <span class="sr-only">Buscar canción, artista o álbum</span>
+          <input id="search" type="search" autocomplete="off" placeholder="Canción, artista o álbum…" />
+        </label>
       </header>
+
+      <nav class="view-tabs" aria-label="Tipos de nodos">
+        <button class="view-tab active" data-view="intrinsic" type="button">
+          <span class="tab-index">01</span>
+          <span><strong>La canción</strong><small>Lanzamiento · álbum · artista · género</small></span>
+        </button>
+        <button class="view-tab" data-view="account" type="button">
+          <span class="tab-index">02</span>
+          <span><strong>Mi cuenta</strong><small>Likes · playlists · ranking · Fresh</small></span>
+        </button>
+        <button class="view-tab" data-view="subjective" type="button">
+          <span class="tab-index">03</span>
+          <span><strong>Mis relaciones</strong><small>Hermano · primo · hijo</small></span>
+        </button>
+      </nav>
 
       <section class="workspace">
         <section class="graph-card" aria-label="Red de canciones">
           <div class="graph-toolbar">
-            <div id="genreFilters" class="filter-list" aria-label="Filtrar por género"></div>
-            <p id="resultCount" class="result-count" aria-live="polite"></p>
+            <div id="filters" class="filter-list" aria-label="Filtros"></div>
+            <div class="toolbar-status">
+              <span id="resultCount"></span>
+              <button id="resetView" class="ghost-button" type="button">Recentrar</button>
+            </div>
           </div>
 
           <div id="network" class="network" tabindex="0">
             <svg id="graph" role="img" aria-labelledby="graphTitle graphDesc">
-              <title id="graphTitle">Red interactiva de canciones</title>
-              <desc id="graphDesc">Las líneas unen canciones relacionadas. Selecciona un nodo para conocer sus conexiones.</desc>
+              <title id="graphTitle">Red personal de canciones</title>
+              <desc id="graphDesc">Selecciona una canción para desplegar sus nodos relacionados.</desc>
               <g id="viewport">
+                <g id="rankRings"></g>
                 <g id="links"></g>
-                <g id="nodes"></g>
+                <g id="attributeNodes"></g>
+                <g id="songNodes"></g>
               </g>
             </svg>
+
+            <div class="graph-instruction" id="instruction">
+              <span class="instruction-key">CLICK</span>
+              Elige una canción para abrir sus nodos
+            </div>
+
             <div class="zoom-controls" aria-label="Controles de zoom">
               <button id="zoomIn" type="button" aria-label="Acercar">+</button>
               <button id="zoomOut" type="button" aria-label="Alejar">−</button>
             </div>
+
             <div id="emptyState" class="empty-state" hidden>
-              <span>Sin coincidencias</span>
-              <p>Prueba otro nombre o cambia el filtro.</p>
+              <strong>Sin coincidencias</strong>
+              <span>Prueba otro término o cambia el filtro.</span>
             </div>
           </div>
 
           <footer class="graph-footer">
             <div id="legend" class="legend"></div>
-            <p>Arrastra nodos · Desplaza el fondo · Usa la rueda para acercar</p>
+            <p>Rueda: zoom · Fondo: desplazar · Nodo: seleccionar</p>
           </footer>
         </section>
 
         <aside id="details" class="details-card" aria-live="polite">
           <div class="details-empty">
-            <div class="pulse-orbit" aria-hidden="true"><span></span></div>
-            <p class="eyebrow">EXPLORA LA RED</p>
-            <h2>Elige una canción</h2>
-            <p>Descubre por qué está conectada con las demás y sigue cada enlace en Spotify.</p>
+            <div class="empty-orbit" aria-hidden="true"><span></span></div>
+            <p class="eyebrow">FICHA DE CANCIÓN</p>
+            <h2>Ninguna selección</h2>
+            <p>Selecciona un nodo para consultar su información, estado dentro de tu cuenta y relaciones personales.</p>
           </div>
         </aside>
       </section>
@@ -85,26 +110,53 @@
 
     <template id="detailsTemplate">
       <article class="song-details">
-        <div class="song-kicker">
-          <span class="song-dot"></span>
-          <span class="song-genre"></span>
+        <div class="cover-wrap">
+          <div class="cover-fallback"></div>
+          <img class="song-cover" alt="" />
+          <span class="position-badge"></span>
         </div>
-        <h2 class="song-title"></h2>
-        <p class="song-artist"></p>
-        <dl class="metadata">
-          <div><dt>Álbum</dt><dd class="song-album"></dd></div>
-          <div><dt>Año</dt><dd class="song-year"></dd></div>
-        </dl>
-        <a class="spotify-button" target="_blank" rel="noreferrer">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.58 14.42a.62.62 0 0 1-.86.2c-2.36-1.44-5.33-1.77-8.83-.97a.625.625 0 1 1-.28-1.22c3.83-.87 7.12-.5 9.77 1.12.3.18.39.57.2.87Zm1.23-2.73a.78.78 0 0 1-1.08.26c-2.7-1.66-6.82-2.14-10.01-1.17a.78.78 0 1 1-.46-1.5c3.65-1.1 8.19-.57 11.3 1.34.37.23.48.71.25 1.07Zm.1-2.84C14.67 8.93 9.34 8.75 6.25 9.69a.94.94 0 1 1-.54-1.79c3.55-1.08 9.44-.87 13.16 1.34a.94.94 0 0 1-.96 1.61Z" /></svg>
-          Abrir en Spotify
-        </a>
-        <section class="connections-section">
-          <div class="section-heading">
-            <h3>Conexiones</h3>
-            <span class="connection-count"></span>
-          </div>
-          <div class="connection-list"></div>
+
+        <div class="detail-heading">
+          <div class="status-row"></div>
+          <h2 class="song-title"></h2>
+          <p class="song-artist"></p>
+        </div>
+
+        <div class="rank-badges"></div>
+
+        <div class="action-row">
+          <a class="spotify-button" target="_blank" rel="noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.58 14.42a.62.62 0 0 1-.86.2c-2.36-1.44-5.33-1.77-8.83-.97a.625.625 0 1 1-.28-1.22c3.83-.87 7.12-.5 9.77 1.12.3.18.39.57.2.87Zm1.23-2.73a.78.78 0 0 1-1.08.26c-2.7-1.66-6.82-2.14-10.01-1.17a.78.78 0 1 1-.46-1.5c3.65-1.1 8.19-.57 11.3 1.34.37.23.48.71.25 1.07Zm.1-2.84C14.67 8.93 9.34 8.75 6.25 9.69a.94.94 0 1 1-.54-1.79c3.55-1.08 9.44-.87 13.16 1.34a.94.94 0 0 1-.96 1.61Z" /></svg>
+            Spotify
+          </a>
+        </div>
+
+        <section class="detail-section">
+          <div class="section-title"><h3>Información</h3><span>INTRÍNSECA</span></div>
+          <dl class="metadata-grid">
+            <div><dt>Lanzamiento</dt><dd class="song-release"></dd></div>
+            <div><dt>Género</dt><dd class="song-genre"></dd></div>
+            <div class="wide"><dt>Álbum</dt><dd class="song-album"></dd></div>
+          </dl>
+        </section>
+
+        <section class="detail-section">
+          <div class="section-title"><h3>Mi cuenta</h3><span>PERSONAL</span></div>
+          <dl class="account-list">
+            <div><dt>Ingreso a Likes</dt><dd class="liked-date"></dd></div>
+            <div><dt>Playlist</dt><dd class="playlist-membership"></dd></div>
+            <div><dt>Máximo ranking</dt><dd class="max-ranking"></dd></div>
+          </dl>
+        </section>
+
+        <section class="detail-section lyrics-section">
+          <div class="section-title"><h3>Lyrics</h3><span>PENDIENTE</span></div>
+          <p>Espacio reservado para el enlace o las anotaciones líricas de esta canción.</p>
+        </section>
+
+        <section class="detail-section notes-section">
+          <div class="section-title"><h3>Notas</h3><span>PERSONALES</span></div>
+          <p>Sin notas todavía.</p>
         </section>
       </article>
     </template>
@@ -112,4 +164,3 @@
     <script src="app.js" defer></script>
   </body>
 </html>
-
