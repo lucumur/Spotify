@@ -147,7 +147,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .song-node .node-core { stroke: rgba(255,255,255,.5); stroke-width: 1; }
 .song-node text {
   opacity: 0; fill: #e8e7e2; font: 600 10px 'DM Sans', sans-serif;
-  paint-order: stroke; stroke: rgba(8,9,11,.9); stroke-width: 4px; pointer-events: none;
+  paint-order: stroke; stroke: rgba(8,9,11,.9); stroke-width: 4px; pointer-events: auto; cursor: pointer;
 }
 .song-node:hover text, .song-node:focus text, .song-node.selected text, .song-node.priority text { opacity: 1; }
 .song-node:hover .node-halo, .song-node.selected .node-halo { stroke: var(--node-color); stroke-opacity: .34; }
@@ -177,6 +177,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   color: var(--text); background: rgba(16,17,20,.88); cursor: pointer; font-size: 1.08rem;
 }
 .empty-state { position: absolute; inset: 0; display: grid; place-content: center; gap: 4px; text-align: center; pointer-events: none; }
+.empty-state[hidden] { display: none; }
 .empty-state span { color: var(--muted); font-size: .74rem; }
 
 .graph-footer {
