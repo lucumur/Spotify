@@ -1,0 +1,145 @@
+{
+  "songs": [
+    {
+      "id": "enjoy-the-silence",
+      "title": "Enjoy the Silence",
+      "artist": "Depeche Mode",
+      "album": "Violator",
+      "year": 1990,
+      "genre": "Synthpop",
+      "color": "#bcff3c",
+      "spotifyUrl": "https://open.spotify.com/search/Enjoy%20the%20Silence%20Depeche%20Mode"
+    },
+    {
+      "id": "blue-monday",
+      "title": "Blue Monday",
+      "artist": "New Order",
+      "album": "Power, Corruption & Lies",
+      "year": 1983,
+      "genre": "New wave",
+      "color": "#5ce1e6",
+      "spotifyUrl": "https://open.spotify.com/search/Blue%20Monday%20New%20Order"
+    },
+    {
+      "id": "a-forest",
+      "title": "A Forest",
+      "artist": "The Cure",
+      "album": "Seventeen Seconds",
+      "year": 1980,
+      "genre": "Post-punk",
+      "color": "#ff5c8a",
+      "spotifyUrl": "https://open.spotify.com/search/A%20Forest%20The%20Cure"
+    },
+    {
+      "id": "smalltown-boy",
+      "title": "Smalltown Boy",
+      "artist": "Bronski Beat",
+      "album": "The Age of Consent",
+      "year": 1984,
+      "genre": "Synthpop",
+      "color": "#bcff3c",
+      "spotifyUrl": "https://open.spotify.com/search/Smalltown%20Boy%20Bronski%20Beat"
+    },
+    {
+      "id": "west-end-girls",
+      "title": "West End Girls",
+      "artist": "Pet Shop Boys",
+      "album": "Please",
+      "year": 1985,
+      "genre": "Synthpop",
+      "color": "#bcff3c",
+      "spotifyUrl": "https://open.spotify.com/search/West%20End%20Girls%20Pet%20Shop%20Boys"
+    },
+    {
+      "id": "sweet-dreams",
+      "title": "Sweet Dreams (Are Made of This)",
+      "artist": "Eurythmics",
+      "album": "Sweet Dreams (Are Made of This)",
+      "year": 1983,
+      "genre": "Synthpop",
+      "color": "#bcff3c",
+      "spotifyUrl": "https://open.spotify.com/search/Sweet%20Dreams%20Eurythmics"
+    },
+    {
+      "id": "bizarre-love-triangle",
+      "title": "Bizarre Love Triangle",
+      "artist": "New Order",
+      "album": "Brotherhood",
+      "year": 1986,
+      "genre": "New wave",
+      "color": "#5ce1e6",
+      "spotifyUrl": "https://open.spotify.com/search/Bizarre%20Love%20Triangle%20New%20Order"
+    },
+    {
+      "id": "personal-jesus",
+      "title": "Personal Jesus",
+      "artist": "Depeche Mode",
+      "album": "Violator",
+      "year": 1989,
+      "genre": "Alternative",
+      "color": "#a98bff",
+      "spotifyUrl": "https://open.spotify.com/search/Personal%20Jesus%20Depeche%20Mode"
+    },
+    {
+      "id": "fade-to-grey",
+      "title": "Fade to Grey",
+      "artist": "Visage",
+      "album": "Visage",
+      "year": 1980,
+      "genre": "New wave",
+      "color": "#5ce1e6",
+      "spotifyUrl": "https://open.spotify.com/search/Fade%20to%20Grey%20Visage"
+    },
+    {
+      "id": "true-faith",
+      "title": "True Faith",
+      "artist": "New Order",
+      "album": "Substance",
+      "year": 1987,
+      "genre": "New wave",
+      "color": "#5ce1e6",
+      "spotifyUrl": "https://open.spotify.com/search/True%20Faith%20New%20Order"
+    },
+    {
+      "id": "love-will-tear-us-apart",
+      "title": "Love Will Tear Us Apart",
+      "artist": "Joy Division",
+      "album": "Substance",
+      "year": 1980,
+      "genre": "Post-punk",
+      "color": "#ff5c8a",
+      "spotifyUrl": "https://open.spotify.com/search/Love%20Will%20Tear%20Us%20Apart%20Joy%20Division"
+    },
+    {
+      "id": "dont-you-want-me",
+      "title": "Don't You Want Me",
+      "artist": "The Human League",
+      "album": "Dare",
+      "year": 1981,
+      "genre": "Synthpop",
+      "color": "#bcff3c",
+      "spotifyUrl": "https://open.spotify.com/search/Don't%20You%20Want%20Me%20The%20Human%20League"
+    }
+  ],
+  "links": [
+    { "source": "enjoy-the-silence", "target": "blue-monday", "type": "Sonido", "reason": "Sintetizadores oscuros, bajo secuenciado y una pista de baile emocional." },
+    { "source": "enjoy-the-silence", "target": "a-forest", "type": "Atmósfera", "reason": "Tensión nocturna, economía instrumental y melancolía expansiva." },
+    { "source": "enjoy-the-silence", "target": "smalltown-boy", "type": "Emoción", "reason": "Vulnerabilidad contenida sobre una arquitectura electrónica bailable." },
+    { "source": "enjoy-the-silence", "target": "west-end-girls", "type": "Escena", "reason": "Pop electrónico británico que convierte la alienación urbana en elegancia." },
+    { "source": "enjoy-the-silence", "target": "personal-jesus", "type": "Álbum", "reason": "Dos caras de Violator: intimidad sintética y blues electrónico industrial." },
+    { "source": "blue-monday", "target": "bizarre-love-triangle", "type": "Artista", "reason": "La evolución de New Order desde el golpe mecánico hacia un pop más luminoso." },
+    { "source": "blue-monday", "target": "true-faith", "type": "Artista", "reason": "Secuencias rítmicas precisas y una melancolía diseñada para la pista." },
+    { "source": "blue-monday", "target": "love-will-tear-us-apart", "type": "Historia", "reason": "La transformación de Joy Division en New Order después de 1980." },
+    { "source": "a-forest", "target": "love-will-tear-us-apart", "type": "Escena", "reason": "El post-punk británico une bajo protagonista, repetición y distancia emocional." },
+    { "source": "a-forest", "target": "fade-to-grey", "type": "Atmósfera", "reason": "Frialdad europea, romanticismo sombrío y texturas minimalistas." },
+    { "source": "smalltown-boy", "target": "west-end-girls", "type": "Narrativa", "reason": "Historias de desplazamiento social contadas desde el pop electrónico." },
+    { "source": "smalltown-boy", "target": "sweet-dreams", "type": "Producción", "reason": "Ritmo sintético frontal, voz inconfundible y tensión entre dureza y fragilidad." },
+    { "source": "west-end-girls", "target": "bizarre-love-triangle", "type": "Época", "reason": "La sofisticación electrónica del pop británico de mediados de los ochenta." },
+    { "source": "sweet-dreams", "target": "dont-you-want-me", "type": "Época", "reason": "Synthpop temprano con melodías inmediatas y producción austera." },
+    { "source": "fade-to-grey", "target": "dont-you-want-me", "type": "Escena", "reason": "El giro del new romantic hacia el pop electrónico masivo." },
+    { "source": "personal-jesus", "target": "love-will-tear-us-apart", "type": "Influencia", "reason": "La austeridad post-punk permanece bajo una producción más física e industrial." },
+    { "source": "true-faith", "target": "bizarre-love-triangle", "type": "Artista", "reason": "Dos síntesis distintas de euforia rítmica y desasosiego lírico." },
+    { "source": "fade-to-grey", "target": "sweet-dreams", "type": "Sonido", "reason": "Motivos sintéticos repetitivos, dramatismo vocal y estética europea fría." }
+  ]
+}
+
