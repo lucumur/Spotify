@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#08090b" />
     <meta name="description" content="Archivo musical personal en forma de red interactiva." />
-    <title>Constelación sonora · Septiembre 15 2025 HITS</title>
-    <link rel="stylesheet" href="styles.css?v=20260916-1" />
+    <title>Constelación sonora · Septiembre 15 2026 HITS</title>
+    <link rel="stylesheet" href="styles.css?v=20260916-2" />
   </head>
   <body>
     <a class="skip-link" href="#network">Saltar a la red</a>
@@ -21,13 +21,13 @@
           </div>
         </div>
 
-        <div class="playlist-identity">
+        <button id="playlistFocus" class="playlist-identity" type="button" aria-pressed="false" aria-label="Mostrar las 130 canciones enlazadas a la playlist">
           <span class="playlist-dot"></span>
           <div>
             <small>PLAYLIST ACTIVA</small>
-            <strong id="playlistName">Septiembre 15 2025 HITS</strong>
+            <strong id="playlistName">Septiembre 15 2026 HITS</strong>
           </div>
-        </div>
+        </button>
 
         <label class="search-field" for="search">
           <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -69,15 +69,17 @@
               <desc id="graphDesc">Selecciona una canción para desplegar sus nodos relacionados.</desc>
               <g id="viewport">
                 <g id="rankRings"></g>
+                <g id="playlistLinks"></g>
                 <g id="links"></g>
                 <g id="attributeNodes"></g>
                 <g id="songNodes"></g>
+                <g id="playlistNode"></g>
               </g>
             </svg>
 
             <div class="graph-instruction" id="instruction">
               <span class="instruction-key">CLICK</span>
-              Elige una canción para abrir sus nodos
+              Elige la playlist para ver sus 130 enlaces o una canción para abrir sus nodos
             </div>
 
             <div class="zoom-controls" aria-label="Controles de zoom">
@@ -161,6 +163,6 @@
       </article>
     </template>
 
-    <script src="app.js" defer></script>
+    <script src="app.js?v=20260916-2" defer></script>
   </body>
 </html>

@@ -1,14 +1,16 @@
 # Constelación sonora
 
-Archivo musical personal en forma de red interactiva. La primera colección importada es **Septiembre 15 2025 HITS**, con 130 canciones reconstruidas desde capturas de Spotify.
+Archivo musical personal en forma de red interactiva. La primera colección importada es **Septiembre 15 2026 HITS**, con 130 canciones reconstruidas desde capturas de Spotify.
 
 ## Funciones
 
+- Nodo central de playlist enlazado explícitamente con sus 130 canciones.
 - Red SVG con zoom y desplazamiento.
-- Buscador por canción, artista o álbum.
+- Buscador por canción, artista, álbum o género.
 - Tres pestañas de nodos: información intrínseca, datos de cuenta y relaciones subjetivas.
 - Categorías acumulativas de ranking: `50.1`, `10.1` y `A.1`.
 - Distinción entre canciones guardadas en Likes y canciones `Fresh`.
+- Género informado para las 130 canciones; las clasificaciones editoriales iniciales se distinguen de las verificadas por API.
 - Panel lateral con metadatos, estado personal, ranking, lyrics y notas.
 - Enlaces a Spotify.
 - Diseño adaptable para computadora y móvil.

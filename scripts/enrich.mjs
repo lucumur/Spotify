@@ -2,11 +2,15 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const source = JSON.parse(await readFile(new URL('../playlist-source.json', import.meta.url), 'utf8'));
 let existingByPosition = new Map();
+let existingGenreByPosition = new Map();
 try {
   const existing = JSON.parse(await readFile(new URL('../songs.json', import.meta.url), 'utf8'));
   existingByPosition = new Map(existing.songs
     .filter(song => song.metadata?.verified)
     .map(song => [song.playlistPosition, song]));
+  existingGenreByPosition = new Map(existing.songs
+    .filter(song => song.genre)
+    .map(song => [song.playlistPosition, song.genre]));
 } catch {
   // Primera generación: todavía no existe un archivo enriquecido.
 }
@@ -113,7 +117,7 @@ const songs = source.map((song, index) => {
     album: match?.collectionName || song.album,
     releaseDate,
     releaseMonthYear: releaseDate?.slice(0, 7) || null,
-    genre: match?.primaryGenreName || null,
+    genre: match?.primaryGenreName || existingGenreByPosition.get(song.position) || null,
     artwork: match?.artworkUrl100?.replace('100x100bb', '600x600bb') || null,
     appleUrl: match?.trackViewUrl || null,
     spotifyUrl: `https://open.spotify.com/search/${encodeURIComponent(`${song.title} ${song.artist.split(',')[0]}`)}`,
@@ -124,7 +128,7 @@ const songs = source.map((song, index) => {
     fresh: !song.saved,
     likedAt: null,
     playlistMemberships: [{
-      name: 'Septiembre 15 2025 HITS',
+      name: 'Septiembre 15 2026 HITS',
       spotifyId: '0M743ojL83o52L5xr3aDIX',
       addedRelative: song.position === 130 ? '7 hours ago' : '13 hours ago'
     }],
@@ -142,7 +146,7 @@ const songs = source.map((song, index) => {
 const output = {
   project: 'Constelación sonora',
   playlist: {
-    name: 'Septiembre 15 2025 HITS',
+    name: 'Septiembre 15 2026 HITS',
     spotifyId: '0M743ojL83o52L5xr3aDIX',
     spotifyUrl: 'https://open.spotify.com/playlist/0M743ojL83o52L5xr3aDIX',
     capturedOn: '2026-09-15',

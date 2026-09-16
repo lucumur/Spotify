@@ -23,6 +23,7 @@ const state = {
   filter: 'Todos',
   query: '',
   selectedId: null,
+  playlistExpanded: false,
   transform: { x: 0, y: 0, scale: 1 },
   panning: null
 };
@@ -31,6 +32,7 @@ const els = {
   svg: document.querySelector('#graph'),
   viewport: document.querySelector('#viewport'),
   rings: document.querySelector('#rankRings'),
+  playlistLinks: document.querySelector('#playlistLinks'),
   links: document.querySelector('#links'),
   attributes: document.querySelector('#attributeNodes'),
   songs: document.querySelector('#songNodes'),
@@ -43,7 +45,9 @@ const els = {
   empty: document.querySelector('#emptyState'),
   legend: document.querySelector('#legend'),
   instruction: document.querySelector('#instruction'),
-  playlistName: document.querySelector('#playlistName')
+  playlistName: document.querySelector('#playlistName'),
+  playlistNode: document.querySelector('#playlistNode'),
+  playlistFocus: document.querySelector('#playlistFocus')
 };
 
 const normalize = text => String(text || '')
@@ -79,6 +83,8 @@ async function init() {
 }
 
 function bindControls() {
+  els.playlistFocus.addEventListener('click', selectPlaylist);
+
   document.querySelectorAll('.view-tab').forEach(button => {
     button.addEventListener('click', () => {
       state.view = button.dataset.view;
@@ -110,7 +116,7 @@ function bindControls() {
   }, { passive: false });
 
   els.svg.addEventListener('pointerdown', event => {
-    if (event.target.closest?.('.song-node')) return;
+    if (event.target.closest?.('.song-node, .playlist-node')) return;
     state.panning = {
       startX: event.clientX,
       startY: event.clientY,
@@ -195,6 +201,7 @@ function renderLegend() {
       ? [['En Likes', COLORS.saved], ['Fresh', COLORS.fresh, 'transparent'], ['Playlist', COLORS.playlist], ['Ranking', COLORS.ranking]]
       : [['Hermano', COLORS.sibling], ['Primo', COLORS.cousin], ['Hijo', COLORS.child]];
 
+  definitions.unshift(['Playlist', COLORS.saved]);
   els.legend.replaceChildren();
   definitions.forEach(([label, color, fill]) => {
     const item = document.createElement('span');
@@ -208,6 +215,8 @@ function renderLegend() {
 
 function renderGraph() {
   els.rings.replaceChildren();
+  els.playlistLinks.replaceChildren();
+  els.playlistNode.replaceChildren();
   els.links.replaceChildren();
   els.attributes.replaceChildren();
   els.songs.replaceChildren();
@@ -223,6 +232,8 @@ function renderGraph() {
     text.textContent = label;
     els.rings.append(text);
   });
+
+  renderPlaylistNode();
 
   state.data.songs.forEach(song => {
     const tier = tierFor(song);
@@ -264,10 +275,11 @@ function renderGraph() {
 
   updateVisibility();
   if (state.selectedId) renderAttributes(state.data.songs.find(song => song.id === state.selectedId));
+  if (state.playlistExpanded) renderPlaylistLinks();
 }
 
 function matchesCurrentFilter(song) {
-  const searchable = normalize(`${song.title} ${song.artist} ${song.album}`);
+  const searchable = normalize(`${song.title} ${song.artist} ${song.album} ${song.genre}`);
   if (state.query && !searchable.includes(state.query)) return false;
   if (state.filter === 'Todos') return true;
 
@@ -299,6 +311,8 @@ function updateVisibility() {
   els.count.textContent = `${visible.length} de ${state.data.songs.length}`;
   els.empty.hidden = visible.length > 0;
 
+  if (state.playlistExpanded) renderPlaylistLinks(visible);
+
   if (state.selectedId && !visibleIds.has(state.selectedId)) {
     state.selectedId = null;
     els.attributes.replaceChildren();
@@ -307,7 +321,97 @@ function updateVisibility() {
   }
 }
 
+function renderPlaylistNode() {
+  const group = svgElement('g', {
+    class: `playlist-node${state.playlistExpanded ? ' active' : ''}`,
+    tabindex: '0',
+    role: 'button',
+    'aria-label': `Playlist ${state.data.playlist.name}: mostrar enlaces a ${state.data.songs.length} canciones`
+  });
+  group.append(
+    svgElement('circle', { class: 'playlist-pulse', r: 45 }),
+    svgElement('circle', { class: 'playlist-core', r: 35 })
+  );
+  const label = svgElement('text', { class: 'playlist-title', y: -4 });
+  label.textContent = 'PLAYLIST';
+  const count = svgElement('text', { class: 'playlist-count', y: 12 });
+  count.textContent = `${state.data.songs.length} CANCIONES`;
+  group.append(label, count);
+  group.addEventListener('click', event => {
+    event.stopPropagation();
+    selectPlaylist();
+  });
+  group.addEventListener('keydown', event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      selectPlaylist();
+    }
+  });
+  els.playlistNode.append(group);
+}
+
+function renderPlaylistLinks(songs = state.data.songs.filter(matchesCurrentFilter)) {
+  els.playlistLinks.replaceChildren();
+  if (!state.playlistExpanded) return;
+  songs.forEach(song => {
+    const line = svgElement('line', {
+      class: 'playlist-link',
+      x1: 0,
+      y1: 0,
+      x2: song.x,
+      y2: song.y
+    });
+    line.style.setProperty('--playlist-link-color', song.fresh ? COLORS.fresh : tierFor(song).color);
+    els.playlistLinks.append(line);
+  });
+}
+
+function selectPlaylist() {
+  state.selectedId = null;
+  state.playlistExpanded = true;
+  state.data.songs.forEach(song => {
+    song.element?.classList.remove('selected', 'dimmed');
+  });
+  els.links.replaceChildren();
+  els.attributes.replaceChildren();
+  els.instruction.hidden = true;
+  els.playlistFocus.setAttribute('aria-pressed', 'true');
+  els.playlistNode.querySelector('.playlist-node')?.classList.add('active');
+  renderPlaylistLinks();
+  renderPlaylistDetails();
+  resetView();
+}
+
+function renderPlaylistDetails() {
+  const songs = state.data.songs;
+  const top50 = songs.filter(song => song.rankCategories.includes('50.1')).length;
+  const fresh = songs.filter(song => song.fresh).length;
+  const liked = songs.filter(song => song.savedToLikes).length;
+  els.details.innerHTML = `
+    <article class="playlist-details">
+      <p class="eyebrow">PLAYLIST ACTIVA</p>
+      <h2>${state.data.playlist.name}</h2>
+      <p class="playlist-summary">Nodo central conectado directamente con las ${songs.length} canciones de esta edición.</p>
+      <div class="playlist-stat-grid">
+        <div><strong>${songs.length}</strong><span>Canciones</span></div>
+        <div><strong>${top50}</strong><span>Top 50</span></div>
+        <div><strong>${fresh}</strong><span>Fresh</span></div>
+        <div><strong>${liked}</strong><span>En Likes</span></div>
+      </div>
+      <a class="spotify-button" href="${state.data.playlist.spotifyUrl}" target="_blank" rel="noreferrer">Abrir playlist en Spotify</a>
+      <section class="detail-section playlist-network-note">
+        <div class="section-title"><h3>Enlaces visibles</h3><span>RED</span></div>
+        <p>Cada línea parte de esta playlist y termina en una de sus canciones. Los colores conservan la categoría o el estado Fresh de cada nodo.</p>
+      </section>
+    </article>`;
+  els.details.scrollTop = 0;
+}
+
 function selectSong(id) {
+  state.playlistExpanded = false;
+  els.playlistLinks.replaceChildren();
+  els.playlistNode.querySelector('.playlist-node')?.classList.remove('active');
+  els.playlistFocus.setAttribute('aria-pressed', 'false');
   state.selectedId = id;
   const song = state.data.songs.find(item => item.id === id);
   state.data.songs.forEach(item => {
