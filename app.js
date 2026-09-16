@@ -148,21 +148,66 @@ function tierFor(song) {
   return { key: 'unranked', color: COLORS.unranked };
 }
 
-function ringForPosition(position) {
-  if (position <= 3) return { radius: 78, index: position - 1, total: 3 };
-  if (position <= 10) return { radius: 138, index: position - 4, total: 7 };
-  if (position <= 30) return { radius: 220, index: position - 11, total: 20 };
-  if (position <= 50) return { radius: 285, index: position - 31, total: 20 };
-  if (position <= 90) return { radius: 365, index: position - 51, total: 40 };
-  return { radius: 445, index: position - 91, total: 40 };
+const PHYSICS_BANDS = [
+  {
+    "key": "top3",
+    "label": "TOP 3",
+    "attraction": 4,
+    "radius": 82
+  },
+  {
+    "key": "top10",
+    "label": "TOP 10",
+    "attraction": 3,
+    "radius": 145
+  },
+  {
+    "key": "top25",
+    "label": "TOP 25",
+    "attraction": 2,
+    "radius": 215
+  },
+  {
+    "key": "top50",
+    "label": "TOP 50",
+    "attraction": 1,
+    "radius": 295
+  },
+  {
+    "key": "nofresh",
+    "label": "NO FRESH",
+    "attraction": 0.5,
+    "radius": 390
+  },
+  {
+    "key": "fresh",
+    "label": "FRESH",
+    "attraction": 0.25,
+    "radius": 485
+  }
+];
+
+function physicsFor(song) {
+  if (song.playlistPosition <= 3) return PHYSICS_BANDS[0];
+  if (song.playlistPosition <= 10) return PHYSICS_BANDS[1];
+  if (song.playlistPosition <= 25) return PHYSICS_BANDS[2];
+  if (song.playlistPosition <= 50) return PHYSICS_BANDS[3];
+  return song.fresh ? PHYSICS_BANDS[5] : PHYSICS_BANDS[4];
 }
 
 function layoutSongs() {
-  state.data.songs.forEach(song => {
-    const ring = ringForPosition(song.playlistPosition);
-    const angle = -Math.PI / 2 + (ring.index / ring.total) * Math.PI * 2;
-    song.x = Math.cos(angle) * ring.radius;
-    song.y = Math.sin(angle) * ring.radius;
+  PHYSICS_BANDS.forEach((band, bandIndex) => {
+    const songs = state.data.songs.filter(song => physicsFor(song).key === band.key);
+    songs.forEach((song, index) => {
+      const angle = -Math.PI / 2 + (index / songs.length) * Math.PI * 2 + bandIndex * 0.11;
+      song.x = Math.cos(angle) * band.radius;
+      song.y = Math.sin(angle) * band.radius;
+      song.networkPhysics = {
+        playlistAttraction: band.attraction,
+        buoyancyBand: band.label,
+        targetRadius: band.radius
+      };
+    });
   });
 }
 
@@ -221,15 +266,10 @@ function renderGraph() {
   els.attributes.replaceChildren();
   els.songs.replaceChildren();
 
-  [
-    [78, 'A.1'],
-    [138, '10.1'],
-    [285, '50.1'],
-    [445, 'SIN ORDEN']
-  ].forEach(([radius, label]) => {
-    els.rings.append(svgElement('circle', { class: 'rank-ring', cx: 0, cy: 0, r: radius }));
-    const text = svgElement('text', { class: 'rank-ring-label', x: 7, y: -radius + 13 });
-    text.textContent = label;
+  PHYSICS_BANDS.forEach(band => {
+    els.rings.append(svgElement('circle', { class: `rank-ring physics-${band.key}`, cx: 0, cy: 0, r: band.radius }));
+    const text = svgElement('text', { class: 'rank-ring-label', x: 7, y: -band.radius + 13 });
+    text.textContent = `${band.label} · ATRACCIÓN ${band.attraction}`;
     els.rings.append(text);
   });
 
@@ -237,16 +277,18 @@ function renderGraph() {
 
   state.data.songs.forEach(song => {
     const tier = tierFor(song);
+    const physics = physicsFor(song);
     const group = svgElement('g', {
-      class: `song-node ${tier.key} ${song.fresh ? 'fresh' : 'saved'} ${song.playlistPosition <= 3 ? 'priority' : ''} ${state.selectedId === song.id ? 'selected' : ''} ${state.selectedId && state.selectedId !== song.id ? 'dimmed' : ''}`,
+      class: `song-node ${tier.key} physics-${physics.key} ${song.fresh ? 'fresh' : 'saved'} ${song.playlistPosition <= 3 ? 'priority' : ''} ${state.selectedId === song.id ? 'selected' : ''} ${state.selectedId && state.selectedId !== song.id ? 'dimmed' : ''}`,
       transform: `translate(${song.x} ${song.y})`,
       tabindex: '0',
       role: 'button',
       'aria-label': `${song.title}, ${song.artist}`,
-      'data-id': song.id
+      'data-id': song.id,
+      'data-attraction': physics.attraction
     });
     group.style.setProperty('--node-color', song.fresh ? COLORS.fresh : tier.color);
-    const radius = song.playlistPosition <= 3 ? 9 : song.playlistPosition <= 10 ? 7 : 5.5;
+    const radius = 5 + Math.min(4, physics.attraction);
     group.append(
       svgElement('circle', { class: 'node-hit', r: 15 }),
       svgElement('circle', { class: 'node-halo', r: radius + 5 }),
@@ -361,7 +403,11 @@ function renderPlaylistLinks(songs = state.data.songs.filter(matchesCurrentFilte
       x2: song.x,
       y2: song.y
     });
+    const physics = physicsFor(song);
     line.style.setProperty('--playlist-link-color', song.fresh ? COLORS.fresh : tierFor(song).color);
+    line.style.setProperty('--playlist-link-weight', `${0.55 + physics.attraction * 0.7}px`);
+    line.style.setProperty('--playlist-link-opacity', Math.min(.48, .14 + physics.attraction * .075));
+    line.dataset.attraction = physics.attraction;
     els.playlistLinks.append(line);
   });
 }
@@ -387,6 +433,8 @@ function renderPlaylistDetails() {
   const top50 = songs.filter(song => song.rankCategories.includes('50.1')).length;
   const fresh = songs.filter(song => song.fresh).length;
   const liked = songs.filter(song => song.savedToLikes).length;
+  const physicsRows = PHYSICS_BANDS.map(band => `
+    <li><span>${band.label}</span><strong>${band.attraction}</strong><small>radio ${band.radius}</small></li>`).join('');
   els.details.innerHTML = `
     <article class="playlist-details">
       <p class="eyebrow">PLAYLIST ACTIVA</p>
@@ -400,8 +448,9 @@ function renderPlaylistDetails() {
       </div>
       <a class="spotify-button" href="${state.data.playlist.spotifyUrl}" target="_blank" rel="noreferrer">Abrir playlist en Spotify</a>
       <section class="detail-section playlist-network-note">
-        <div class="section-title"><h3>Enlaces visibles</h3><span>RED</span></div>
-        <p>Cada línea parte de esta playlist y termina en una de sus canciones. Los colores conservan la categoría o el estado Fresh de cada nodo.</p>
+        <div class="section-title"><h3>Peso de arrastre y buoyancy</h3><span>FÍSICA</span></div>
+        <ul class="physics-scale">${physicsRows}</ul>
+        <p>Mayor atracción: enlace más pesado y nodo más próximo. Menor atracción: mayor buoyancy radial.</p>
       </section>
     </article>`;
   els.details.scrollTop = 0;
@@ -523,6 +572,9 @@ function renderDetails(song) {
   fragment.querySelector('.max-ranking').textContent = song.rankCategories.length
     ? `#${song.chartRank} · ${song.rankCategories.join(' · ')}`
     : 'Sin orden definido';
+  const physics = physicsFor(song);
+  fragment.querySelector('.physics-attraction').textContent = `${physics.attraction}`;
+  fragment.querySelector('.physics-buoyancy').textContent = `${physics.label} · radio ${physics.radius}`;
 
   const status = fragment.querySelector('.status-row');
   status.append(makeChip(song.fresh ? 'Fresh' : 'En Likes', song.fresh ? COLORS.fresh : COLORS.saved));
@@ -598,7 +650,7 @@ function focusOnSong(song) {
 function resetView(animate = true) {
   const width = els.network.clientWidth;
   const height = els.network.clientHeight;
-  const scale = Math.min(.96, Math.max(.56, (Math.min(width, height) - 60) / 900));
+  const scale = Math.min(.96, Math.max(.56, (Math.min(width, height) - 60) / 1020));
   state.transform = { x: width / 2, y: height / 2, scale };
   els.viewport.style.transition = animate ? 'transform 240ms ease' : 'none';
   applyTransform();

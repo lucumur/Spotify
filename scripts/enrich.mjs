@@ -102,6 +102,64 @@ const matches = await mapConcurrent(source, 1, async song => {
   };
 });
 
+const NETWORK_PHYSICS = [
+  {
+    "key": "top3",
+    "label": "Top 3",
+    "attraction": 4,
+    "targetRadius": 82
+  },
+  {
+    "key": "top10",
+    "label": "Top 10",
+    "attraction": 3,
+    "targetRadius": 145
+  },
+  {
+    "key": "top25",
+    "label": "Top 25",
+    "attraction": 2,
+    "targetRadius": 215
+  },
+  {
+    "key": "top50",
+    "label": "Top 50",
+    "attraction": 1,
+    "targetRadius": 295
+  },
+  {
+    "key": "nofresh",
+    "label": "No Fresh",
+    "attraction": 0.5,
+    "targetRadius": 390
+  },
+  {
+    "key": "fresh",
+    "label": "Fresh",
+    "attraction": 0.25,
+    "targetRadius": 485
+  }
+];
+
+function networkPhysicsFor(song) {
+  const band = song.position <= 3
+    ? NETWORK_PHYSICS[0]
+    : song.position <= 10
+      ? NETWORK_PHYSICS[1]
+      : song.position <= 25
+        ? NETWORK_PHYSICS[2]
+        : song.position <= 50
+          ? NETWORK_PHYSICS[3]
+          : song.saved
+            ? NETWORK_PHYSICS[4]
+            : NETWORK_PHYSICS[5];
+  return {
+    playlistAttraction: band.attraction,
+    buoyancyBand: band.label,
+    targetRadius: band.targetRadius
+  };
+}
+
 const songs = source.map((song, index) => {
   const match = matches[index];
   const releaseDate = match?.releaseDate?.slice(0, 10) || null;
@@ -126,6 +184,7 @@ const songs = source.map((song, index) => {
     rankCategories: categories,
     savedToLikes: song.saved,
     fresh: !song.saved,
+    networkPhysics: networkPhysicsFor(song),
     likedAt: null,
     playlistMemberships: [{
       name: 'Septiembre 15 2026 HITS',
@@ -151,7 +210,11 @@ const output = {
     spotifyUrl: 'https://open.spotify.com/playlist/0M743ojL83o52L5xr3aDIX',
     capturedOn: '2026-09-15',
     totalSongs: songs.length,
-    rankedSongs: 50
+    rankedSongs: 50,
+    networkPhysics: {
+      model: 'Atracción de playlist con buoyancy radial inversa',
+      attractionScale: NETWORK_PHYSICS
+    }
   },
   songs
 };

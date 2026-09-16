@@ -5,7 +5,48 @@
     "rankedSongs": 50,
     "spotifyId": "0M743ojL83o52L5xr3aDIX",
     "spotifyUrl": "https://open.spotify.com/playlist/0M743ojL83o52L5xr3aDIX",
-    "totalSongs": 130
+    "totalSongs": 130,
+    "networkPhysics": {
+      "model": "Atracción de playlist con buoyancy radial inversa",
+      "attractionScale": [
+        {
+          "key": "top3",
+          "label": "Top 3",
+          "attraction": 4,
+          "targetRadius": 82
+        },
+        {
+          "key": "top10",
+          "label": "Top 10",
+          "attraction": 3,
+          "targetRadius": 145
+        },
+        {
+          "key": "top25",
+          "label": "Top 25",
+          "attraction": 2,
+          "targetRadius": 215
+        },
+        {
+          "key": "top50",
+          "label": "Top 50",
+          "attraction": 1,
+          "targetRadius": 295
+        },
+        {
+          "key": "nofresh",
+          "label": "No Fresh",
+          "attraction": 0.5,
+          "targetRadius": 390
+        },
+        {
+          "key": "fresh",
+          "label": "Fresh",
+          "attraction": 0.25,
+          "targetRadius": 485
+        }
+      ]
+    }
   },
   "project": "Constelación sonora",
   "songs": [
@@ -45,7 +86,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Andromeda%20Weyes%20Blood",
       "subjectiveLinks": [],
-      "title": "Andromeda"
+      "title": "Andromeda",
+      "networkPhysics": {
+        "playlistAttraction": 4,
+        "buoyancyBand": "Top 3",
+        "targetRadius": 82
+      }
     },
     {
       "album": "PAdMIrARTe - Single",
@@ -83,7 +129,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/PAdMirARTe%20BadB",
       "subjectiveLinks": [],
-      "title": "PAdMIrARTe"
+      "title": "PAdMIrARTe",
+      "networkPhysics": {
+        "playlistAttraction": 4,
+        "buoyancyBand": "Top 3",
+        "targetRadius": 82
+      }
     },
     {
       "album": "five seconds flat",
@@ -121,7 +172,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/ceilings%20Lizzy%20McAlpine",
       "subjectiveLinks": [],
-      "title": "ceilings"
+      "title": "ceilings",
+      "networkPhysics": {
+        "playlistAttraction": 4,
+        "buoyancyBand": "Top 3",
+        "targetRadius": 82
+      }
     },
     {
       "album": "I Don't Want: The Gold Fire Sessions",
@@ -158,7 +214,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Run%20the%20Road%20Santigold",
       "subjectiveLinks": [],
-      "title": "Run the Road"
+      "title": "Run the Road",
+      "networkPhysics": {
+        "playlistAttraction": 3,
+        "buoyancyBand": "Top 10",
+        "targetRadius": 145
+      }
     },
     {
       "album": "Parfum Quartier - Single",
@@ -195,7 +256,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Parfum%20quartier%20Jul",
       "subjectiveLinks": [],
-      "title": "Parfum Quartier"
+      "title": "Parfum Quartier",
+      "networkPhysics": {
+        "playlistAttraction": 3,
+        "buoyancyBand": "Top 10",
+        "targetRadius": 145
+      }
     },
     {
       "album": "Shockwaves - EP",
@@ -232,7 +298,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Mesmerised%20Scenic",
       "subjectiveLinks": [],
-      "title": "Mesmerised"
+      "title": "Mesmerised",
+      "networkPhysics": {
+        "playlistAttraction": 3,
+        "buoyancyBand": "Top 10",
+        "targetRadius": 145
+      }
     },
     {
       "album": "Master of My Make-Believe",
@@ -269,7 +340,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/God%20from%20the%20Machine%20Santigold",
       "subjectiveLinks": [],
-      "title": "God from the Machine"
+      "title": "God from the Machine",
+      "networkPhysics": {
+        "playlistAttraction": 3,
+        "buoyancyBand": "Top 10",
+        "targetRadius": 145
+      }
     },
     {
       "album": "She Won't Make Sense",
@@ -306,7 +382,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Don't%20Panic%20The%20Harmaleighs",
       "subjectiveLinks": [],
-      "title": "Don't Panic"
+      "title": "Don't Panic",
+      "networkPhysics": {
+        "playlistAttraction": 3,
+        "buoyancyBand": "Top 10",
+        "targetRadius": 145
+      }
     },
     {
       "album": "Happy Now (Only Fire Remix)",
@@ -343,7 +424,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Happy%20Now%20-%20Only%20Fire%20Remix%20Lykke%20Li",
       "subjectiveLinks": [],
-      "title": "Happy Now - Only Fire Remix"
+      "title": "Happy Now - Only Fire Remix",
+      "networkPhysics": {
+        "playlistAttraction": 3,
+        "buoyancyBand": "Top 10",
+        "targetRadius": 145
+      }
     },
     {
       "album": "Kevin",
@@ -380,7 +466,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Univers%20Ferran%20Palau",
       "subjectiveLinks": [],
-      "title": "Univers"
+      "title": "Univers",
+      "networkPhysics": {
+        "playlistAttraction": 3,
+        "buoyancyBand": "Top 10",
+        "targetRadius": 145
+      }
     },
     {
       "album": "Just Another Diamond Day",
@@ -416,7 +507,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Diamond%20Day%20Vashti%20Bunyan",
       "subjectiveLinks": [],
-      "title": "Diamond Day"
+      "title": "Diamond Day",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "Riviera",
@@ -452,7 +548,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Here%20I%20Am%20The%20Hellp",
       "subjectiveLinks": [],
-      "title": "Here I Am"
+      "title": "Here I Am",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "Moving Targets",
@@ -488,7 +589,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Keep%20It%20Warm%20Flo%20%26%20Eddie",
       "subjectiveLinks": [],
-      "title": "Keep It Warm"
+      "title": "Keep It Warm",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "Keep It Safe",
@@ -524,7 +630,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Paia%20Wild%20Ones",
       "subjectiveLinks": [],
-      "title": "Paia"
+      "title": "Paia",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "AURA - Single",
@@ -560,7 +671,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/AURA%20Ogryzek",
       "subjectiveLinks": [],
-      "title": "AURA"
+      "title": "AURA",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "The Birthday Party",
@@ -596,7 +712,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Morning%20Sunshine%20The%20Idle%20Race",
       "subjectiveLinks": [],
-      "title": "Morning Sunshine"
+      "title": "Morning Sunshine",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "I si canto trist",
@@ -632,7 +753,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Que%20tinguem%20sort%20Llu%C3%ADs%20Llach",
       "subjectiveLinks": [],
-      "title": "Que tinguem sort"
+      "title": "Que tinguem sort",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "Free Company",
@@ -668,7 +794,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Get%20Well%20Soon%20Taylor%20Vick",
       "subjectiveLinks": [],
-      "title": "Get Well Soon"
+      "title": "Get Well Soon",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "TÁNGER Y ZAHARA - Single",
@@ -704,7 +835,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/ZAHARA%20Judeline",
       "subjectiveLinks": [],
-      "title": "ZAHARA"
+      "title": "ZAHARA",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "WORTH NOTHING (Fast & Furious: Drift Tape/Phonk Vol. 1) [feat. Oliver Tree] - EP",
@@ -740,7 +876,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/WORTH%20NOTHING%20(feat.%20Oliver%20Tree)%20TWISTED",
       "subjectiveLinks": [],
-      "title": "WORTH NOTHING (feat. Oliver Tree)"
+      "title": "WORTH NOTHING (feat. Oliver Tree)",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "Digital Dozen",
@@ -776,7 +917,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Can%20We%20Still%20Be%20Friends%3F%20-%202015%20Remaster%20Todd%20Rundgren",
       "subjectiveLinks": [],
-      "title": "Can We Still Be Friends? (2006 Remaster)"
+      "title": "Can We Still Be Friends? (2006 Remaster)",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "Lovewave",
@@ -812,7 +958,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Lovewave%20The%201-800",
       "subjectiveLinks": [],
-      "title": "Lovewave"
+      "title": "Lovewave",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "Saí para ver o mar - Single",
@@ -848,7 +999,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Sai%20para%20ver%20o%20mar%20Marina%20Sena",
       "subjectiveLinks": [],
-      "title": "Saí para ver o mar"
+      "title": "Saí para ver o mar",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "ciuicui",
@@ -884,7 +1040,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Ses%20yeux%20Asfar%20Shamsi",
       "subjectiveLinks": [],
-      "title": "Ses yeux"
+      "title": "Ses yeux",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "Ordinary Boy (The Remixes)",
@@ -920,7 +1081,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Ordinary%20Boy%20-%20The%20Cinematic%20Orchestra%20Remix%20Ultra%C3%ADsta",
       "subjectiveLinks": [],
-      "title": "Ordinary Boy (The Cinematic Orchestra Remix)"
+      "title": "Ordinary Boy (The Cinematic Orchestra Remix)",
+      "networkPhysics": {
+        "playlistAttraction": 2,
+        "buoyancyBand": "Top 25",
+        "targetRadius": 215
+      }
     },
     {
       "album": "1.6",
@@ -956,7 +1122,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/AMNESIA%20TIF",
       "subjectiveLinks": [],
-      "title": "AMNESIA"
+      "title": "AMNESIA",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Grey Veils",
@@ -992,7 +1163,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Grey%20Veils%20Chainless",
       "subjectiveLinks": [],
-      "title": "Grey Veils"
+      "title": "Grey Veils",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Imaginations",
@@ -1028,7 +1204,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Mona%20Lisa's%20Smile%20Molly%20Nilsson",
       "subjectiveLinks": [],
-      "title": "Mona Lisa's Smile"
+      "title": "Mona Lisa's Smile",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "aquatic ambience - Single",
@@ -1064,7 +1245,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/aquatic%20ambience%20Scizzie",
       "subjectiveLinks": [],
-      "title": "aquatic ambience"
+      "title": "aquatic ambience",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Gary Puckett & The Union Gap Featuring \"Young Girl\"",
@@ -1100,7 +1286,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Young%20Girl%20Gary%20Puckett%20%26%20The%20Union%20Gap",
       "subjectiveLinks": [],
-      "title": "Young Girl"
+      "title": "Young Girl",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "The 5000 Spirits or the Layers of the Onion",
@@ -1136,7 +1327,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Gently%20Tender%20-%202010%20Remaster%20The%20Incredible%20String%20Band",
       "subjectiveLinks": [],
-      "title": "Gently Tender - 2010 Remaster"
+      "title": "Gently Tender - 2010 Remaster",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "The Best of Simon & Garfunkel",
@@ -1172,7 +1368,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Mrs.%20Robinson%20-%20From%20The%20Graduate%20Soundtrack%20Simon%20%26%20Garfunkel",
       "subjectiveLinks": [],
-      "title": "Mrs. Robinson (From \"The Graduate\" Soundtrack)"
+      "title": "Mrs. Robinson (From \"The Graduate\" Soundtrack)",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "I TRIED",
@@ -1208,7 +1409,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/OI%20KAIROI%20ALLAZOUNE%20Saske",
       "subjectiveLinks": [],
-      "title": "OI KAIROI ALLAZOUNE"
+      "title": "OI KAIROI ALLAZOUNE",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Balla la masurca!",
@@ -1244,7 +1450,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Cantiga%20de%20Montse%20Guillem%20Gisbert",
       "subjectiveLinks": [],
-      "title": "Cantiga de Montse"
+      "title": "Cantiga de Montse",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Here Where There Is Love",
@@ -1280,7 +1491,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Alfie%20Dionne%20Warwick",
       "subjectiveLinks": [],
-      "title": "Alfie"
+      "title": "Alfie",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Tu Gato Bellaco - Single",
@@ -1316,7 +1532,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Tu%20Gato%20Bellaco%20Milo%20Mae",
       "subjectiveLinks": [],
-      "title": "Tu Gato Bellaco"
+      "title": "Tu Gato Bellaco",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Heart of the Dancer",
@@ -1352,7 +1573,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Impi%20Johnny%20Clegg",
       "subjectiveLinks": [],
-      "title": "Impi"
+      "title": "Impi",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Wildflowers",
@@ -1388,7 +1614,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Both%20Sides%20Now%20Judy%20Collins",
       "subjectiveLinks": [],
-      "title": "Both Sides Now"
+      "title": "Both Sides Now",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Piloto - Single",
@@ -1424,7 +1655,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Piloto%20Flora%20Matos",
       "subjectiveLinks": [],
-      "title": "Piloto"
+      "title": "Piloto",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Chosen",
@@ -1460,7 +1696,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Beggin'%20M%C3%A5neskin",
       "subjectiveLinks": [],
-      "title": "Beggin'"
+      "title": "Beggin'",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "The Belt",
@@ -1496,7 +1737,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Peaches%20In%20The%20Valley%20Below",
       "subjectiveLinks": [],
-      "title": "Peaches"
+      "title": "Peaches",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "CANIJO - Single",
@@ -1532,7 +1778,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/CANIJO%20Judeline",
       "subjectiveLinks": [],
-      "title": "CANIJO"
+      "title": "CANIJO",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Facto Delafe y las Flores Azules Vs. El Monstruo de las Ramblas",
@@ -1568,7 +1819,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Enero%20en%20la%20playa%20Facto%20Delaf%C3%A9%20y%20las%20flores%20azules",
       "subjectiveLinks": [],
-      "title": "Enero en la Playa"
+      "title": "Enero en la Playa",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Six Forty Seven - Single",
@@ -1604,7 +1860,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Six%20Forty%20Seven%20Instupendo",
       "subjectiveLinks": [],
-      "title": "Six Forty Seven"
+      "title": "Six Forty Seven",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "الحلقة الشرقية",
@@ -1640,7 +1901,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/%D9%84%D9%8A%20%D9%85%D9%87%D8%AC%D9%88%D8%B1%20%D8%B9%D8%B2%D9%8A%D8%B2%20%D9%85%D8%B1%D9%82%D8%A9",
       "subjectiveLinks": [],
-      "title": "لي مهجور"
+      "title": "لي مهجور",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Black Books",
@@ -1676,7 +1942,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/The%20Big%20Idea%20Black%20Books",
       "subjectiveLinks": [],
-      "title": "The Big Idea"
+      "title": "The Big Idea",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "LE NORD SE SOUVIENT : L'ODYSSÉE",
@@ -1712,7 +1983,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/PARISIENNE%20GIMS",
       "subjectiveLinks": [],
-      "title": "PARISIENNE"
+      "title": "PARISIENNE",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "Queen of the Clouds",
@@ -1748,7 +2024,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Habits%20(Stay%20High)%20Tove%20Lo",
       "subjectiveLinks": [],
-      "title": "Habits (Stay High)"
+      "title": "Habits (Stay High)",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "The Beatles (The White Album)",
@@ -1784,7 +2065,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Sexy%20Sadie%20-%20Remastered%202009%20The%20Beatles",
       "subjectiveLinks": [],
-      "title": "Sexy Sadie"
+      "title": "Sexy Sadie",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "down with the snow - Single",
@@ -1820,7 +2106,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/down%20with%20the%20snow%20campthehills",
       "subjectiveLinks": [],
-      "title": "down with the snow"
+      "title": "down with the snow",
+      "networkPhysics": {
+        "playlistAttraction": 1,
+        "buoyancyBand": "Top 50",
+        "targetRadius": 295
+      }
     },
     {
       "album": "She Hangs Brightly",
@@ -1854,7 +2145,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Halah%20Mazzy%20Star",
       "subjectiveLinks": [],
-      "title": "Halah"
+      "title": "Halah",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Front Row Seat to Earth",
@@ -1888,7 +2184,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Be%20Free%20Weyes%20Blood",
       "subjectiveLinks": [],
-      "title": "Be Free"
+      "title": "Be Free",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Panpin bat bezala",
@@ -1922,7 +2223,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Panpin%20bat%20bezala%20Jimena%20Amarillo",
       "subjectiveLinks": [],
-      "title": "Panpin bat bezala"
+      "title": "Panpin bat bezala",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Precariedade Emocional - Single",
@@ -1956,7 +2262,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/precariedade%20emocional%20bratzantifa",
       "subjectiveLinks": [],
-      "title": "Precariedade Emocional"
+      "title": "Precariedade Emocional",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "ALKIMIA - EP",
@@ -1990,7 +2301,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Sin%20pena%20ni%20gloria%20Gara%20Dur%C3%A1n",
       "subjectiveLinks": [],
-      "title": "Sin pena ni gloria"
+      "title": "Sin pena ni gloria",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Pure Heroine",
@@ -2024,7 +2340,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Buzzcut%20Season%20Lorde",
       "subjectiveLinks": [],
-      "title": "Buzzcut Season"
+      "title": "Buzzcut Season",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Weathervane",
@@ -2058,7 +2379,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Weathervane%20Hunter%20Metts",
       "subjectiveLinks": [],
-      "title": "Weathervane"
+      "title": "Weathervane",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "freedom - Single",
@@ -2092,7 +2418,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/freedom%20campthehills",
       "subjectiveLinks": [],
-      "title": "freedom"
+      "title": "freedom",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "ESTRUS",
@@ -2126,7 +2457,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/I'm%20your%20girl%20right%3F%20Tove%20Lo",
       "subjectiveLinks": [],
-      "title": "if I could I would"
+      "title": "if I could I would",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Je ne me vois pas briller",
@@ -2160,7 +2496,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Je%20suis%20rest%C3%A9%20le%20m%C3%AAme%20Jul",
       "subjectiveLinks": [],
-      "title": "Je suis resté le même"
+      "title": "Je suis resté le même",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Nero nemesis",
@@ -2194,7 +2535,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Valid%C3%A9e%20Booba",
       "subjectiveLinks": [],
-      "title": "Validée"
+      "title": "Validée",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "VPI Harmony",
@@ -2228,7 +2574,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Pathos%20y%20Lagrimas%20Mood%20Rings",
       "subjectiveLinks": [],
-      "title": "Pathos y Lagrimas"
+      "title": "Pathos y Lagrimas",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Suddenly",
@@ -2262,7 +2613,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/You%20and%20I%20Caribou",
       "subjectiveLinks": [],
-      "title": "You and I"
+      "title": "You and I",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Juice",
@@ -2296,7 +2652,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Angel%20Of%20The%20Morning%20Juice%20Newton",
       "subjectiveLinks": [],
-      "title": "Angel Of The Morning"
+      "title": "Angel Of The Morning",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Designer",
@@ -2330,7 +2691,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/The%20Barrel%20Aldous%20Harding",
       "subjectiveLinks": [],
-      "title": "The Barrel"
+      "title": "The Barrel",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Demon Days",
@@ -2364,7 +2730,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/DARE%20(feat.%20Shaun%20Ryder%20%26%20Roses%20Gabor)%20Gorillaz",
       "subjectiveLinks": [],
-      "title": "DARE (feat. Shaun Ryder & Roses Gabor)"
+      "title": "DARE (feat. Shaun Ryder & Roses Gabor)",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Candy",
@@ -2398,7 +2769,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Candy%20Plan%20B",
       "subjectiveLinks": [],
-      "title": "Candy"
+      "title": "Candy",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "TOMMY & PAMELA - Single",
@@ -2432,7 +2808,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/TOMMY%20%26%20PAMELA%20Peso%20Pluma",
       "subjectiveLinks": [],
-      "title": "TOMMY & PAMELA"
+      "title": "TOMMY & PAMELA",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Xenitemena mou poulia",
@@ -2466,7 +2847,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Xenitemena%20mou%20poulia%20Alkyone",
       "subjectiveLinks": [],
-      "title": "Xenitemena mou poulia"
+      "title": "Xenitemena mou poulia",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Home Alone (Original Motion Picture Soundtrack)",
@@ -2500,7 +2886,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Carol%20of%20the%20Bells%20(From%20Home%20Alone)%20John%20Williams",
       "subjectiveLinks": [],
-      "title": "Carol of the Bells (From Home Alone)"
+      "title": "Carol of the Bells (From Home Alone)",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Let It Loose",
@@ -2534,7 +2925,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/1-2-3%20Miami%20Sound%20Machine",
       "subjectiveLinks": [],
-      "title": "1-2-3"
+      "title": "1-2-3",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Planet Her",
@@ -2568,7 +2964,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Need%20to%20Know%20Doja%20Cat",
       "subjectiveLinks": [],
-      "title": "Need to Know"
+      "title": "Need to Know",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Mujer De Todos, Mujer De Nadie",
@@ -2602,7 +3003,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/De%20M%C3%AD%20Enam%C3%B3rate%20Daniela%20Romo",
       "subjectiveLinks": [],
-      "title": "De Mí Enamórate"
+      "title": "De Mí Enamórate",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Toto IV",
@@ -2636,7 +3042,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Rosanna%20TOTO",
       "subjectiveLinks": [],
-      "title": "Rosanna"
+      "title": "Rosanna",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Inner Mystique",
@@ -2670,7 +3081,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Baby%20Blue%20The%20Chocolate%20Watchband",
       "subjectiveLinks": [],
-      "title": "Baby Blue"
+      "title": "Baby Blue",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "LA VIDA ES UNA",
@@ -2704,7 +3120,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/LALA%20Myke%20Towers",
       "subjectiveLinks": [],
-      "title": "LALA"
+      "title": "LALA",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Touch 'Em With Love",
@@ -2738,7 +3159,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Seasons%20Come%2C%20Seasons%20Go%20Bobbie%20Gentry",
       "subjectiveLinks": [],
-      "title": "Seasons Come, Seasons Go"
+      "title": "Seasons Come, Seasons Go",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Safira",
@@ -2772,7 +3198,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Safira%20Kazzio",
       "subjectiveLinks": [],
-      "title": "Safira"
+      "title": "Safira",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Rédemption",
@@ -2806,7 +3237,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Le%20c%C5%93ur%20des%20filles%20A2H",
       "subjectiveLinks": [],
-      "title": "Le cœur des filles"
+      "title": "Le cœur des filles",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Ipséité",
@@ -2840,7 +3276,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/E.%20Signaler%20Damso",
       "subjectiveLinks": [],
-      "title": "E. Signaler"
+      "title": "E. Signaler",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Malaquita",
@@ -2874,7 +3315,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Malaquita%20Gara%20Dur%C3%A1n",
       "subjectiveLinks": [],
-      "title": "Malaquita"
+      "title": "Malaquita",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Strange Diary",
@@ -2908,7 +3354,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Hopeless%20Psychic%20Twin",
       "subjectiveLinks": [],
-      "title": "Hopeless"
+      "title": "Hopeless",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Arts Martials",
@@ -2942,7 +3393,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Dois%20Re%C3%AFna",
       "subjectiveLinks": [],
-      "title": "Dois"
+      "title": "Dois",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Dreamcore (Nostalgia)",
@@ -2976,7 +3432,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Dreamcore%20MEWYI",
       "subjectiveLinks": [],
-      "title": "Dreamcore"
+      "title": "Dreamcore",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Six Forty Seven - Single",
@@ -3010,7 +3471,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Six%20Forty%20Seven%20Instupendo",
       "subjectiveLinks": [],
-      "title": "Six Forty Seven"
+      "title": "Six Forty Seven",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Miel",
@@ -3044,7 +3510,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Miel%20Lauri%20Garcia",
       "subjectiveLinks": [],
-      "title": "Miel"
+      "title": "Miel",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Corridos Bélicos, Vol. IV",
@@ -3078,7 +3549,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Sin%20Tanto%20Royo%20Luis%20R%20Conriquez",
       "subjectiveLinks": [],
-      "title": "Sin Tanto Royo"
+      "title": "Sin Tanto Royo",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Imagine",
@@ -3112,7 +3588,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Imagine%20Carbonne",
       "subjectiveLinks": [],
-      "title": "Imagine"
+      "title": "Imagine",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "rompeolas",
@@ -3146,7 +3627,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/rompeolas%20Mart%C3%ADn",
       "subjectiveLinks": [],
-      "title": "rompeolas"
+      "title": "rompeolas",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Ewa Safi",
@@ -3180,7 +3666,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Ewa%20Safi%20Noano",
       "subjectiveLinks": [],
-      "title": "Ewa Safi"
+      "title": "Ewa Safi",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "MADRA",
@@ -3214,7 +3705,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Angel%20NewDad",
       "subjectiveLinks": [],
-      "title": "Angel"
+      "title": "Angel",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Corridor",
@@ -3248,7 +3744,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Only%20You%20Know%20Cornelia%20Murr",
       "subjectiveLinks": [],
-      "title": "Only You Know"
+      "title": "Only You Know",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Yo quiero un affaire",
@@ -3282,7 +3783,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Yo%20quiero%20un%20affaire%20Jimena%20Amarillo",
       "subjectiveLinks": [],
-      "title": "Yo quiero un affaire"
+      "title": "Yo quiero un affaire",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Canciones en Mí",
@@ -3316,7 +3822,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Vida%20Nueva%20pablopablo",
       "subjectiveLinks": [],
-      "title": "Vida Nueva"
+      "title": "Vida Nueva",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "I-I",
@@ -3350,7 +3861,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Ens%20vam%20esfum.%20(abrv.)%20miquel",
       "subjectiveLinks": [],
-      "title": "Ens vam esfum. (abrv.)"
+      "title": "Ens vam esfum. (abrv.)",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Nothing Happens",
@@ -3384,7 +3900,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Scrawny%20Wallows",
       "subjectiveLinks": [],
-      "title": "Scrawny"
+      "title": "Scrawny",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Transmissions: The Music of Beverly Glenn-Copeland",
@@ -3418,7 +3939,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/River%20Dreams%20Beverly%20Glenn-Copeland",
       "subjectiveLinks": [],
-      "title": "River Dreams"
+      "title": "River Dreams",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "In My Own Time (50th Anniversary Edition)",
@@ -3452,7 +3978,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Something%20on%20Your%20Mind%20Karen%20Dalton",
       "subjectiveLinks": [],
-      "title": "Something on Your Mind"
+      "title": "Something on Your Mind",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "DEPR:/$$$ED MFKZ",
@@ -3486,7 +4017,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/DEMENCIA%20Junior%20H",
       "subjectiveLinks": [],
-      "title": "DEMENCIA"
+      "title": "DEMENCIA",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "LINAJE",
@@ -3520,7 +4056,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/FREESTYLE%20Hermanos%20Espinoza",
       "subjectiveLinks": [],
-      "title": "FREESTYLE"
+      "title": "FREESTYLE",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "Songs of Her's",
@@ -3554,7 +4095,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/What%20Once%20Was%20Her's",
       "subjectiveLinks": [],
-      "title": "What Once Was"
+      "title": "What Once Was",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Desire",
@@ -3588,7 +4134,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Under%20Your%20Spell%20Desire",
       "subjectiveLinks": [],
-      "title": "Under Your Spell"
+      "title": "Under Your Spell",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "La Voz Favorita",
@@ -3622,7 +4173,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/De%20Lejitos%20-%20Remix%20Jay%20Wheeler",
       "subjectiveLinks": [],
-      "title": "De Lejitos - Remix"
+      "title": "De Lejitos - Remix",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Yo Solo Quería Divertirme",
@@ -3656,7 +4212,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Pu%C3%B1aladas%20Lauta",
       "subjectiveLinks": [],
-      "title": "Puñaladas"
+      "title": "Puñaladas",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Von hier an blind",
@@ -3690,7 +4251,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Von%20hier%20an%20blind%20Wir%20sind%20Helden",
       "subjectiveLinks": [],
-      "title": "Von hier an blind"
+      "title": "Von hier an blind",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Inundauswendig",
@@ -3724,7 +4290,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Inundauswendig%20makko",
       "subjectiveLinks": [],
-      "title": "Inundauswendig"
+      "title": "Inundauswendig",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Na Contramão",
@@ -3758,7 +4329,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Ta%20Pedindo%20Toma%20MC%20Leozinho%20ZS",
       "subjectiveLinks": [],
-      "title": "Ta Pedindo Toma"
+      "title": "Ta Pedindo Toma",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Um Peão Desse",
@@ -3792,7 +4368,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Um%20Pe%C3%A3o%20Desse%20CountryBeat",
       "subjectiveLinks": [],
-      "title": "Um Peão Desse"
+      "title": "Um Peão Desse",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "KURVY V POZORU",
@@ -3826,7 +4407,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/KURVY%20V%20POZORU%20PTK",
       "subjectiveLinks": [],
-      "title": "KURVY V POZORU"
+      "title": "KURVY V POZORU",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Garee2a Awy - A COLORS SHOW",
@@ -3860,7 +4446,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Garee2a%20Awy%20-%20A%20COLORS%20SHOW%20TUL8TE",
       "subjectiveLinks": [],
-      "title": "Garee2a Awy - A COLORS SHOW"
+      "title": "Garee2a Awy - A COLORS SHOW",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Sadeek El Bernameg",
@@ -3894,7 +4485,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Wala%20Ash%20Wala%20Kan%20TUL8TE",
       "subjectiveLinks": [],
-      "title": "Wala Ash Wala Kan"
+      "title": "Wala Ash Wala Kan",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Väärä nainen",
@@ -3928,7 +4524,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/V%C3%A4%C3%A4r%C3%A4%20nainen%20Ida",
       "subjectiveLinks": [],
-      "title": "Väärä nainen"
+      "title": "Väärä nainen",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "I TRIED",
@@ -3962,7 +4563,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/ORES%20Saske",
       "subjectiveLinks": [],
-      "title": "ORES"
+      "title": "ORES",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "APROVEITAR",
@@ -3996,7 +4602,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/APROVEITAR%20SNIK",
       "subjectiveLinks": [],
-      "title": "APROVEITAR"
+      "title": "APROVEITAR",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "10 (PART 2)",
@@ -4030,7 +4641,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/GEITONIA%20KAI%20TILEFONO%20TOQUEL",
       "subjectiveLinks": [],
-      "title": "GEITONIA KAI TILEFONO"
+      "title": "GEITONIA KAI TILEFONO",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Íslenski draumurinn",
@@ -4064,7 +4680,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Kominn%20heim%20Kristmundur%20Axel",
       "subjectiveLinks": [],
-      "title": "Kominn heim"
+      "title": "Kominn heim",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "The Swell",
@@ -4098,7 +4719,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/The%20Swell%20Amble",
       "subjectiveLinks": [],
-      "title": "The Swell"
+      "title": "The Swell",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Mediterraneo (Deluxe)",
@@ -4132,7 +4758,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Da%20Dio%20Bresh",
       "subjectiveLinks": [],
-      "title": "Da Dio"
+      "title": "Da Dio",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "EL BAIFO",
@@ -4166,7 +4797,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/LA%20GRACIOSA%20Quevedo",
       "subjectiveLinks": [],
-      "title": "LA GRACIOSA"
+      "title": "LA GRACIOSA",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "AMATORE",
@@ -4200,7 +4836,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/FLAMENCO%20PARANOIA%20Samurai%20Jay",
       "subjectiveLinks": [],
-      "title": "FLAMENCO PARANOIA"
+      "title": "FLAMENCO PARANOIA",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "RIKI",
@@ -4234,7 +4875,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/RIKI%20Neton%20Vega",
       "subjectiveLinks": [],
-      "title": "RIKI"
+      "title": "RIKI",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "54+1",
@@ -4268,7 +4914,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/Me%20Reh%C3%BAso%20Danny%20Ocean",
       "subjectiveLinks": [],
-      "title": "Me Rehúso"
+      "title": "Me Rehúso",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "MALA MÍA",
@@ -4302,7 +4953,12 @@
       "savedToLikes": true,
       "spotifyUrl": "https://open.spotify.com/search/COQUETA%20Fuerza%20Regida",
       "subjectiveLinks": [],
-      "title": "COQUETA"
+      "title": "COQUETA",
+      "networkPhysics": {
+        "playlistAttraction": 0.5,
+        "buoyancyBand": "No Fresh",
+        "targetRadius": 390
+      }
     },
     {
       "album": "WA3RA",
@@ -4336,7 +4992,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/WA3RA%20Mirv48",
       "subjectiveLinks": [],
-      "title": "WA3RA"
+      "title": "WA3RA",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Ți-am furat femeia",
@@ -4370,7 +5031,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/%C8%9Ai-am%20furat%20femeia%20M%C4%82D%C4%82TORRICELLI",
       "subjectiveLinks": [],
-      "title": "Ți-am furat femeia"
+      "title": "Ți-am furat femeia",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Dandelion",
@@ -4404,7 +5070,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Be%20Her%20Ella%20Langley",
       "subjectiveLinks": [],
-      "title": "Be Her"
+      "title": "Be Her",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Firewater",
@@ -4438,7 +5109,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Broken%20Window%20Serenade%20Whiskey%20Myers",
       "subjectiveLinks": [],
-      "title": "Broken Window Serenade"
+      "title": "Broken Window Serenade",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Visitor",
@@ -4472,7 +5148,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Great%20Expectation%20SIENNA%20SPIRO",
       "subjectiveLinks": [],
-      "title": "Great Expectation"
+      "title": "Great Expectation",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Long Way Home",
@@ -4506,7 +5187,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Boston%20STELLA%20LEFTY",
       "subjectiveLinks": [],
-      "title": "Boston"
+      "title": "Boston",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     },
     {
       "album": "Ahora Soy Mi Prioridad",
@@ -4540,7 +5226,12 @@
       "savedToLikes": false,
       "spotifyUrl": "https://open.spotify.com/search/Ahora%20Soy%20Mi%20Prioridad%20Nyla%20Stone",
       "subjectiveLinks": [],
-      "title": "Ahora Soy Mi Prioridad"
+      "title": "Ahora Soy Mi Prioridad",
+      "networkPhysics": {
+        "playlistAttraction": 0.25,
+        "buoyancyBand": "Fresh",
+        "targetRadius": 485
+      }
     }
   ]
 }
